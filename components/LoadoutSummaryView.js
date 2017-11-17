@@ -18,8 +18,6 @@ export default class LoadoutSummaryView extends React.Component
             // <View style={{flex: 1, backgroundColor: 'gray'}}>
             //     <Text> {this.props.loadout.displayName} </Text>
             // </View>
-            <Container>
-            <Content>
               <Card style={{flex: 1}}>
                 <CardItem>
                   <Left>
@@ -51,8 +49,6 @@ export default class LoadoutSummaryView extends React.Component
                   </Left>
                 </CardItem>
               </Card>
-            </Content>
-          </Container>
         )
     }
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View, ScrollView } from 'react-native';
 import LoadoutItemView from "./LoadoutItemView";
 import LoadoutSummaryView from "./LoadoutSummaryView";
-
+import {Container, Content} from 'native-base';
 
 export default class LoadoutViewer extends React.Component
 {
@@ -11,8 +11,12 @@ export default class LoadoutViewer extends React.Component
     {
         return(
             <ScrollView>
-                {this.renderLoadoutSummary()}
-                {this.renderItems()}        
+                <Container>
+                    <Content>
+                        {this.renderLoadoutSummary()}
+                        {this.renderItems()}        
+                    </Content>
+                </Container>
             </ScrollView>
         )
     }
