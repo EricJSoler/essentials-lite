@@ -1,9 +1,9 @@
 {
   "expo": {
     "name": "essentials-lite",
-    "description": "An empty new project",
+    "description": "Lite version of the essentials app",
     "slug": "essentials-lite",
-    "privacy": "public",
+    "privacy": "unlisted",
     "sdkVersion": "23.0.0",
     "version": "1.0.0",
     "orientation": "portrait",
