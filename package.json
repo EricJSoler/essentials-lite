@@ -5,5 +5,9 @@
     "expo": "^23.0.0",
     "react": "16.0.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-23.0.0.tar.gz"
-  }
+  },
+  "name": "essentials-lite",
+  "version": "0.0.0",
+  "description": "Hello Expo!",
+  "author": null
 }

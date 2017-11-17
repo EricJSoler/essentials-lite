@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "My New Project",
+    "name": "essentials-lite",
     "description": "An empty new project",
-    "slug": "my-new-project",
+    "slug": "essentials-lite",
     "privacy": "public",
     "sdkVersion": "23.0.0",
     "version": "1.0.0",
