@@ -57,6 +57,7 @@ const customStyles = {
         flex: 1,
         resizeMode: 'cover',
         width: width,
-        height: height
+        height: height,
+        justifyContent: 'center'
     }
   }
