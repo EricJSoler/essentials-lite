@@ -10,14 +10,12 @@ export default class LoadoutViewer extends React.Component
     render()
     {
         return(
-            <ScrollView>
-                <Container>
-                    <Content>
-                        {this.renderLoadoutSummary()}
-                        {this.renderItems()}        
-                    </Content>
-                </Container>
-            </ScrollView>
+            <Container>
+                <Content>
+                    {this.renderLoadoutSummary()}
+                    {this.renderItems()}        
+                </Content>
+            </Container>
         )
     }
 

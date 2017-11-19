@@ -1,5 +1,11 @@
 
 
+export function getTrendingList()
+{
+    var list = [SmokingWeedLoadout, HikingLoadout, EmptyLoadout];
+
+    return list;
+}
 
 export function  getEntries(name)
 {
@@ -49,7 +55,7 @@ const EmptyLoadout = {
         description: 'Some blah blah blah reason about why you need this pack',
         displayName: 'EmptyLoadout',
         imageUri: 'someUri',
-        entryList: [EmptyItem,EmptyItem,EmptyItem,EmptyItem]
+        items: [EmptyItem,EmptyItem,EmptyItem,EmptyItem]
 
     }
 
@@ -96,7 +102,7 @@ const SmokingWeedLoadout = {
     description: 'Some blah blah blah reason about why you need this pack',
     displayName: 'Smoking Weed Loadout',
     imageUri: 'someUri',
-    entryList: [Weed, MjPipe, Lighter, Gum]
+    items: [Weed, MjPipe, Lighter, Gum]
 }
 
 
@@ -125,6 +131,6 @@ const HikingLoadout = {
     description: 'Some blah blah blah reason about why you need this pack',
     displayName: 'Hiking Essentials',
     imageUri: 'someUri',
-    entryList: [Daypack, HikingBoots]
+    items: [Daypack, HikingBoots]
 
 }
