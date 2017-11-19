@@ -1,6 +1,7 @@
 import React from "react";
 import { StatusBar, View, Image } from "react-native";
 import { Container, Thumbnail, Header, Title, Left, Icon, Right, Button, Body, Content,Text, Card, CardItem } from "native-base";
+import { WebBrowser } from 'expo';
 
 export default class MyDetailsScreen extends React.Component {
 
@@ -16,7 +17,7 @@ renderLoadoutSummary(arrEntry, index)
       <Card key={index} style={{flex: 1}} >
         <CardItem >
           <Left>
-            <Thumbnail source={{uri: 'https://cdn0.iconfinder.com/data/icons/smile-emoticons/78/smyle_emoticons-07-512.png'}} />
+            <Thumbnail source={{uri: arrEntry.imageUri}} />
             <Body>
               <Text>{arrEntry.displayName}</Text>
               <Text note>11/20/2017</Text>
@@ -48,40 +49,54 @@ renderLoadoutSummary(arrEntry, index)
   ); 
 }
 
+_handleItemPress(item)
+{
+  console.log('opening uri: [' + item.adUri + ']');
+  WebBrowser.openBrowserAsync(
+    item.adUri
+  );
+}
+
 renderLoadoutItems(loadout)
 {
   let itemsArr = loadout.items;
-  console.log('rendering loadout items ' + itemsArr)
+  console.log('rendering loadout items ' + itemsArr);
+
    return itemsArr.map((item,index,origObject) => {
     return (
       (
         <Card key={index} style={{flex: 1}}>
-          <CardItem>
+          <CardItem button onPress={ () => this._handleItemPress(item)}>
             <Left>
                 {/* <Thumbnail source={{uri: 'https://cdn0.iconfinder.com/data/icons/smile-emoticons/78/smyle_emoticons-07-512.png'}} /> */}
-                <Body> 
+                {/* <Body>  */}
+                <Button transparent textStyle={{color: '#87838B'}} onPress={ () => this._handleItemPress(item)}>
+                  <Icon name='checkbox' />
+                </Button>
+                
                 <Text>{item.displayName}</Text>
-                <Text note>11/20/2017</Text>
-                </Body>
+                {/* </Body> */}
             </Left>
           </CardItem>
-          <CardItem>
+          <CardItem button onPress={ () => this._handleItemPress(item)} >
             <Body>
-                {/* <View style={{flex: 1}}>
-                    <Image source={{uri: 'http://2qibqm39xjt6q46gf1rwo2g1.wpengine.netdna-cdn.com/wp-content/uploads/2017/04/web1_M2-170424-EDH-ManOfTheYearFinalists-222x300.jpg'}} 
-                        style={customStyles.backgroundImage}
-                    />
-                </View> */}
+              <View style={{flex: 1, width: 200, height: 200, margin: 5}}>         
+
+                <Image 
+                style={{flex:1, height: undefined, width: undefined, resizeMode: 'contain'}}
+                  source={{uri: item.imageUri}}
+                />
+                </View>
                 <Text>
-                {item.description}
+                  {item.description}
                 </Text>
             </Body>
           </CardItem>
-          <CardItem>
+          <CardItem button onPress={ () => this._handleItemPress(item)}>
             <Left>
-                <Button transparent textStyle={{color: '#87838B'}}>
-                <Icon name="logo-github" />
-                <Text>1,926 stars</Text>
+                <Button transparent textStyle={{color: '#87838B'}} onPress={ () => this._handleItemPress(item)}>
+                <Icon name="cart" />
+                <Text>Click to Buy!</Text>
                 </Button>
             </Left>
           </CardItem>

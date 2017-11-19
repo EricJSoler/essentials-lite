@@ -40,7 +40,7 @@ export default class LoadoutViewer extends React.Component
 
     renderItems()
     {
-        let arr = this.props.loadoutData.entryList;
+        let arr = this.props.loadoutData.items;
         console.log(arr);
         return arr.map((entry,index,origObject) => this.renderSingleEntry(entry, index, origObject));
 

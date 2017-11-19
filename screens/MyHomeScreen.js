@@ -17,17 +17,16 @@ export default class MyHomeScreen extends React.Component {
   renderDataBaseLoadouts()
   {
     var trendingList = getTrendingList();
-    var myNavigator = this.props.navigation; //this.props.navigation.navigate("Details", {loadout: arrEntry})
+    var myNavigator = this.props.navigation; //this.props.navigation.navigate("Details", {loadout: arrEntry}) //'https://cdn0.iconfinder.com/data/icons/smile-emoticons/78/smyle_emoticons-07-512.png'
     return trendingList.map( (arrEntry, index, listItself) => {
       return (
         (
           <Card key={index} style={{flex: 1}} >
             <CardItem button onPress={() => this.navigateToDetailsPageForLoadout(arrEntry)}>
               <Left>
-                <Thumbnail source={{uri: 'https://cdn0.iconfinder.com/data/icons/smile-emoticons/78/smyle_emoticons-07-512.png'}} />
-                <Body>
+                <Thumbnail source={{uri: arrEntry.imageUri}} />  
+                <Body>  
                   <Text>{arrEntry.displayName}</Text>
-                  <Text note>11/20/2017</Text>
                 </Body>
               </Left>
             </CardItem>
@@ -56,7 +55,7 @@ export default class MyHomeScreen extends React.Component {
       ); 
       }, this);
 
-    //return arr.map((entry,index,origObject) => this.renderSingleLoadout(entry, index, origObject));
+    //return arr.map((entry,index,origObject) => this.renderSingleLoadout(entry, index, origObject)); <Text>{item.displayName}</Text>
   }
 
   render() {

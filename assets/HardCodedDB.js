@@ -2,7 +2,7 @@
 
 export function getTrendingList()
 {
-    var list = [SmokingWeedLoadout, HikingLoadout, EmptyLoadout];
+    var list = [CampingLoadout, SkiingLoadOut];
 
     return list;
 }
@@ -43,10 +43,10 @@ export function  getEntries(name)
 const EmptyItem =
     {
         guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
-        displayName: 'EmptyItemName',
-        description: 'Some blah blah blah reason about why you need this item',
-        imageUri: 'some path to an image',
-        uri: 'https://eil.com/shop/moreinfo.asp?catalogid=466977' 
+        displayName: 'Bug Spray',
+        description: 'Just about anywhere you camp with temperatures about 60f you\'re going to need bugspray',
+        imageUri: 'https://images-na.ssl-images-amazon.com/images/I/71Vd-KQCgZL._SL1500_.jpg',
+        adUri: 'https://www.amazon.com/Repel-Insect-Repellent-Single-Bottle/dp/B004H89KFC/ref=sr_1_1?s=sporting-goods&amp;ie=UTF8&amp;qid=1511060750&amp;sr=1-1&amp;keywords=bugspray&_encoding=UTF8&tag=ericjsoler-20&linkCode=ur2&linkId=27bf44bc002df4f42695f3877e25a8e4&camp=1789&creative=9325' 
     }
 
 const EmptyLoadout = {
@@ -58,6 +58,183 @@ const EmptyLoadout = {
         items: [EmptyItem,EmptyItem,EmptyItem,EmptyItem]
 
     }
+
+// camping loadout
+const BugSpray =
+{
+    guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
+    displayName: 'Bug Spray',
+    description: 'Just about anywhere you camp with temperatures about 60f you\'re going to need bugspray',
+    imageUri: 'https://images-na.ssl-images-amazon.com/images/I/71Vd-KQCgZL._SL1500_.jpg',
+    adUri: 'https://www.amazon.com/Repel-Insect-Repellent-Single-Bottle/dp/B004H89KFC/ref=sr_1_1?s=sporting-goods&amp;ie=UTF8&amp;qid=1511060750&amp;sr=1-1&amp;keywords=bugspray&_encoding=UTF8&tag=ericjsoler-20&linkCode=ur2&linkId=27bf44bc002df4f42695f3877e25a8e4&camp=1789&creative=9325' 
+}
+
+const Tent =
+{
+    guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
+    displayName: 'Tent',
+    description: 'If you\'re planning on staying overnight, you will want somewhere to sleep!',
+    imageUri: 'https://images-na.ssl-images-amazon.com/images/I/51-9me2dSIL._SL1000_.jpg',
+    adUri: 'https://www.amazon.com/EverKing-Automatic-Waterproof-Backpacking-Ultralight/dp/B06XCGBYSM/ref=sr_1_2_sspa?s=outdoor-recreation&amp;ie=UTF8&amp;qid=1511066655&amp;sr=1-2-spons&amp;keywords=tent&amp;psc=1&_encoding=UTF8&tag=ericjsoler-20&linkCode=ur2&linkId=e5eabdcdafbce695eceb8b3a06419157&camp=1789&creative=9325' 
+}
+
+const TentFootPrint =
+{
+    guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
+    displayName: 'Tent Foot Print',
+    description: 'Rookie campers might not know this but the ground contains a ton of moisture and putting a tarp under your tent can keep your tent dry and make it last longer!',
+    imageUri: 'https://images-na.ssl-images-amazon.com/images/I/61X9XGUQE0L._SL1000_.jpg',
+    adUri: 'https://www.amazon.com/TOMSHOO-Waterproof-Hammock-Blanket-Mutil-functional/dp/B0752BSD7F/ref=sr_1_1?s=sporting-goods&amp;ie=UTF8&amp;qid=1511067074&amp;sr=1-1&amp;keywords=Tent+footprint+%28ground+cover+for+under+your+tent%29&_encoding=UTF8&tag=ericjsoler-20&linkCode=ur2&linkId=1de11fd6a5ec7c2aceea372f5c350d28&camp=1789&creative=9325' 
+}
+
+const MiniCampBurner =
+{
+    guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
+    displayName: 'Mini Camp Burner',
+    description: 'Pro campers know that you want to be able to have a hot meal but don\'t want to deal with packing a huge stove. A little burner like this will get you the functionality you need without breaking the bank!',
+    imageUri: 'https://images-na.ssl-images-amazon.com/images/I/71fhmitJj-L._SL1000_.jpg',
+    adUri: 'https://www.amazon.com/Petforu-Cookware-Backpacking-Ignition-Canister/dp/B015SRB58U/ref=sr_1_4?s=sporting-goods&amp;ie=UTF8&amp;qid=1511067557&amp;sr=1-4&amp;keywords=mini+camp+stove&_encoding=UTF8&tag=ericjsoler-20&linkCode=ur2&linkId=c889f85756ab49155be1b2cc99e0fec2&camp=1789&creative=9325' 
+}
+
+const CampChair =
+{
+    guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
+    displayName: 'Camp Chair',
+    description: 'You\'re always going to need a camp chair. You might think there will be something like a fallen tree to sit on, but trust me you\'re wrong. Bring you\'re own seat so you can tell others to move their meat',
+    imageUri: 'https://images-na.ssl-images-amazon.com/images/I/61JHdo0sNlL._SL1000_.jpg',
+    adUri: 'https://www.amazon.com/Coleman-Oversized-Quad-Chair-Cooler/dp/B0033990ZQ/ref=sr_1_3?s=sporting-goods&amp;ie=UTF8&amp;qid=1511068355&amp;sr=1-3&amp;keywords=camp+chair&_encoding=UTF8&tag=ericjsoler-20&linkCode=ur2&linkId=d0264765a91312223acc07c94911378c&camp=1789&creative=9325' 
+}
+
+
+const CampingLoadout = {
+    guid: '694840D5-88F4-4250-94FF-A820377CF9FB',
+    category: 'testCategory',
+    description: 'Who doesnt love camping?',
+    displayName: 'Camping',
+    imageUri: 'https://imgs.tuts.dragoart.com/how-to-draw-a-tent_1_000000005120_5.jpg',
+    items: [Tent, TentFootPrint,MiniCampBurner, CampChair, BugSpray]
+}
+
+
+// m
+
+const Ski =
+{
+    guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
+    displayName: 'Skis',
+    description: 'You need something to shred the pow. Choose your weapon wisely.',
+    imageUri: 'https://images.evo.com/imgp/700/106007/451892/clone.jpg',
+    adUri: 'https://www.evo.com/outlet/skis/line-blend-2017#image=106007/451892/clone.jpg'
+}
+const Helmet =
+{
+    guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
+    displayName: 'Helmet',
+    description: 'Never ski without a brain bucket',
+    imageUri: 'https://images.evo.com/imgp/700/83354/390695/anon-scout-helmet-big-kids-white-detail-1.jpg',
+    adUri: 'https://www.evo.com/helmets/anon-scout-helmet-kids-2#image=83354/390695/anon-scout-helmet-big-kids-white-detail-1.jpg'
+}
+
+const Goggles =
+{
+    guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
+    displayName: 'Goggles',
+    description: 'Goggles let you see the gnarly lines you hit, and your buddies wipeouts',
+    imageUri: 'https://images.evo.com/imgp/700/91931/515465/smith-i-o7-goggles-dirksenac-chromapop-sun-black-chromapop-storm-rose.jpg',
+    adUri: 'https://www.evo.com/goggles/smith-i/o7#image=91931/515465/smith-i-o7-goggles-dirksenac-chromapop-sun-black-chromapop-storm-rose.jpg'
+}
+const Bindings =
+{
+    guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
+    displayName: 'Bindings',
+    description: 'Bindings keep your boots attached to your skis',
+    imageUri: 'https://images.evo.com/imgp/700/106132/451482/salomon-sth2-13-wtr-ski-bindings-2017-black-white.jpg',
+    adUri: 'https://www.evo.com/alpine-ski-bindings/salomon-sth2-13-wtr'
+}
+const Pants =
+{
+    guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
+    displayName: 'Ski Pants',
+    description: 'Stay dry in overalls',
+    imageUri:'https://images.evo.com/imgp/700/115866/526678/ride-central-bib-pants-black-charcoal-melange.jpg',
+    adUri: 'https://www.evo.com/shell-pants/ride-central-bib'
+}
+const Boots =
+{
+    guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
+    displayName: 'Ski Boots',
+    description: 'Full Tilt boots for a full send day',
+    imageUri: 'https://images.evo.com/imgp/700/122060/518186/clone.jpg',
+    adUri: 'https://www.evo.com/alpine-ski-boots/full-tilt-be-pro-ltd#image=122060/518186/clone.jpg'
+}
+
+const Jacket =
+{
+    guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
+    displayName: 'Ski Jacket',
+    description: 'If you look good you ski good',
+    imageUri: 'https://images.evo.com/imgp/700/103388/467478/ride-hawthorne-jacket-brown-melange-charcoal-melange.jpg',
+    adUri: 'https://www.evo.com/outlet/insulated-jackets/ride-hawthorne-jacket-17#image=103388/467478/ride-hawthorne-jacket-brown-melange-charcoal-melange.jpg'
+
+}
+
+const Gloves =
+{
+    guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
+    displayName: 'Gloves',
+    description: 'Keep your hands warm',
+    imageUri: 'https://images.evo.com/imgp/700/106309/466590/hestra-army-leather-gore-tex-gloves-black.jpg',
+    adUri: 'https://www.evo.com/gloves/hestra-army-leather-gore-tex#image=106309/466590/hestra-army-leather-gore-tex-gloves-black.jpg'
+
+}
+const BeerKoozie =
+{
+    guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
+    displayName: 'beer koozie',
+    description: 'Just because you beer is cold doesn\'t mean your hands need to be',
+    imageUri: 'https://images-na.ssl-images-amazon.com/images/I/91eKV6bJ06L._SL1500_.jpg',
+    adUri: 'https://www.amazon.com/QualityPerfection-American-Neoprene-Insulation-Independence/dp/B071FRGRLV/ref=sr_1_32?s=home-garden&ie=UTF8&qid=1511067834&sr=1-32&keywords=beer+koozie'
+
+}
+const SkiPoles =
+{
+    guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
+    displayName: 'Ski poles',
+    description: 'Ski poles help you get around',
+    imageUri: 'https://images.evo.com/imgp/700/122053/511824/line-skis-wallischtick-ski-poles-2018-black.jpg',
+    adUri: 'https://www.evo.com/ski-poles/line-skis-wallischtick#image=122053/511824/line-skis-wallischtick-ski-poles-2018-black.jpg'
+}
+const Beer =
+{
+    guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
+    displayName: 'Beer',
+    description: 'This is as important as skis',
+    imageUri:'https://cdn.totalfratmove.com/wp-content/uploads/2016/08/62a9261e654650a441e6c5e34ffae4b5-1024x890.jpg',
+    adUri: 'https://www.amazon.com/ref=nav_logo'
+}
+
+const SkiSocks =
+{
+    guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
+    displayName: 'Ski socks',
+    description: 'Socks are important to keep your feet warm ',
+    imageUri:'https://images.evo.com/imgp/700/122053/511824/line-skis-wallischtick-ski-poles-2018-black.jpg',
+    adUri: 'https://www.evo.com/ski-poles/line-skis-wallischtick#image=122053/511824/line-skis-wallischtick-ski-poles-2018-black.jpg'
+}
+
+
+
+const SkiingLoadOut = {
+    guid: '694840D5-88F4-4250-94FF-A820377CF9FB',
+    category: 'testCategory',
+    description: 'Kill it on your first day on the slopes?',
+    displayName: 'Skiing',
+    imageUri: 'https://images.evo.com/imgp/700/106007/451892/clone.jpg',
+    items: [Ski,Bindings, SkiPoles, Jacket, Pants, Goggles, Gloves, Helmet, Beer, BeerKoozie]
+
+}
+
+
 
 // Smoke Weed Loadout and items
 const Weed =

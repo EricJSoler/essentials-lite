@@ -11,34 +11,34 @@ export default class LoadoutItemView extends React.Component
     {
         return(
         <Card style={{flex: 1}}>
-        <CardItem>
-        <Left>
-            {/* <Thumbnail source={{uri: 'https://cdn0.iconfinder.com/data/icons/smile-emoticons/78/smyle_emoticons-07-512.png'}} /> */}
-            <Body>
-            <Text>{this.props.loadoutItem.displayName}</Text>
-            <Text note>11/20/2017</Text>
-            </Body>
-        </Left>
-        </CardItem>
-        <CardItem>
-        <Body>
-            <View style={{flex: 1}}>
-                <Image source={{uri: 'http://2qibqm39xjt6q46gf1rwo2g1.wpengine.netdna-cdn.com/wp-content/uploads/2017/04/web1_M2-170424-EDH-ManOfTheYearFinalists-222x300.jpg'}} 
-                    style={customStyles.backgroundImage}
-                />
-            </View>
-            <Text>
-            {this.props.loadoutItem.description}
-            </Text>
-        </Body>
-        </CardItem>
-        <CardItem>
-            <Left>
-                <Button transparent textStyle={{color: '#87838B'}}>
-                <Icon name="logo-github" />
-                <Text>1,926 stars</Text>
-                </Button>
-            </Left>
+            <CardItem>
+                <Left>
+                    {/* <Thumbnail source={{uri: 'https://cdn0.iconfinder.com/data/icons/smile-emoticons/78/smyle_emoticons-07-512.png'}} /> */}
+                    <Body>
+                    <Text>{this.props.loadoutItem.displayName}</Text>
+                    <Text note>11/20/2017</Text>
+                    </Body>
+                </Left>
+                </CardItem>
+                <CardItem>
+                <Body>
+                    <View style={{flex: 1}}>
+                        <Image source={{uri: 'http://2qibqm39xjt6q46gf1rwo2g1.wpengine.netdna-cdn.com/wp-content/uploads/2017/04/web1_M2-170424-EDH-ManOfTheYearFinalists-222x300.jpg'}} 
+                            style={customStyles.backgroundImage}
+                        />
+                    </View>
+                    <Text>
+                    {this.props.loadoutItem.description}
+                    </Text>
+                </Body>
+            </CardItem>
+            <CardItem>
+                <Left>
+                    <Button transparent textStyle={{color: '#87838B'}}>
+                    <Icon name="logo-github" />
+                    <Text>1,926 stars</Text>
+                    </Button>
+                </Left>
             </CardItem>
         </Card>
         )
