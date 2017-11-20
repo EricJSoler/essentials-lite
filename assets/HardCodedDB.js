@@ -242,7 +242,7 @@ const WorkoutShirt =
 {
     guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
     displayName: 'Dry Fit shirt',
-    description: 'These shirts wick away sweat and keep you cool while training',
+    description: 'Wear a shirt that keeps you cool while traning',
     imageUri: 'https://www.johnnymacs.com/content/images/thumbs/0020796_mens-nike-legend-20-training-t-shirt_550.jpeg',
     adUri: 'https://www.amazon.com/Legend-2-0-Short-Sleeve-Silver/dp/B010RRW11Q/ref=sr_1_10?s=apparel&amp;ie=UTF8&amp;qid=1511131306&amp;sr=1-10&amp;nodeID=7147441011&amp;psd=1&amp;keywords=nike+shirt&_encoding=UTF8&tag=ericjsoler-20&linkCode=ur2&linkId=0f4cfd0cae3122e58e38d89c6f0eb37b&camp=1789&creative=9325'
 }
@@ -251,7 +251,7 @@ const WorkoutShorts =
 {
     guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
     displayName: 'Fight Shorts',
-    description: 'You need to wear shorts that don\'t have pockets to prevent hand injuries, I suggest fight shorts',
+    description: 'Wear shorts that don\'t have pockets to prevent hand injuries, I suggest fight shorts',
     imageUri: 'https://images-na.ssl-images-amazon.com/images/I/61-ZwBCBSfL._SL1024_.jpg',
     adUri: 'https://www.amazon.com/CLINCH-GEAR-Shorts-Size-30-Pewter/dp/B00UB5730Y/ref=sr_1_28_sspa?s=apparel&amp;ie=UTF8&amp;qid=1511130794&amp;sr=1-28-spons&amp;nodeID=1046660&amp;psd=1&amp;keywords=usa+wrestling+fight+shorts&amp;psc=1&_encoding=UTF8&tag=ericjsoler-20&linkCode=ur2&linkId=c3a6dd3ba500065de1828553d049d73c&camp=1789&creative=9325'
 }
@@ -287,7 +287,7 @@ const WrestlingBag =
 {
     guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
     displayName: 'Wrestling Bag',
-    description: 'This is the best bag to carry your gear.',
+    description: 'This is the best bag to carry wrestling gear',
     imageUri: 'https://images-na.ssl-images-amazon.com/images/I/91VZWjxJTNL._SL1500_.jpg',
     adUri: 'https://www.amazon.com/ASICS-Gear-Bag-Black-Size/dp/B0000C07XF/ref=sr_1_1?s=sporting-goods&amp;ie=UTF8&amp;qid=1511133598&amp;sr=1-1&amp;keywords=Wrestling+bag&amp;dpID=51ltIsuWEBL&amp;preST=_SY300_QL70_&amp;dpSrc=srch&_encoding=UTF8&tag=ericjsoler-20&linkCode=ur2&linkId=0091539195604398c653c0f3ba226eb3&camp=1789&creative=9325'
 }
