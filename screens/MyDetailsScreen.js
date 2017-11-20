@@ -1,9 +1,44 @@
 import React from "react";
 import { StatusBar, View, Image } from "react-native";
 import { Container, Thumbnail, Header, Title, Left, Icon, Right, Button, Body, Content,Text, Card, CardItem } from "native-base";
-import { WebBrowser } from 'expo';
+import { WebBrowser, AppLoading, Font, Asset} from 'expo';
+import { FontAwesome } from '@expo/vector-icons';
+
+function cacheImages(images) {
+  return images.map(image => {
+    if (typeof image === 'string') {
+      return Image.prefetch(image);
+    } else {
+      console.log('dont know how to fetch non string img');
+    }
+  });
+}
+
+function cacheFonts(fonts) {
+  return fonts.map(font => Font.loadAsync(font));
+}
 
 export default class MyDetailsScreen extends React.Component {
+
+  state =
+  {
+    isReady: false
+  };
+
+  async _loadAssetsAsync() {
+    
+    var itemsList = this.props.navigation.state.params.loadout;
+    var imageArray = [];
+    for (var i = 0; i <  itemsList.length; i++) {
+      imageArray.push( itemsList[i].imageUri);
+    }      
+
+    const imageAssets = cacheImages(imageArray);
+  
+    const fontAssets = cacheFonts([FontAwesome.font]);
+    
+    await Promise.all([...imageAssets, ...fontAssets]);
+  }
 
 renderLoadoutSummary(arrEntry, index)
 {
@@ -78,7 +113,7 @@ renderLoadoutItems(loadout)
                 {/* </Body> */}
             </Left>
           </CardItem>
-          <CardItem button onPress={ () => this._handleItemPress(item)} >
+          <CardItem  >
             <Body>
               <View style={{flex: 1, width: 200, height: 200, margin: 5}}>         
 
@@ -107,28 +142,39 @@ renderLoadoutItems(loadout)
 }
 
   render() {
-    return (
-
-      <Container>
-        <Header>
-          <Left>
-            <Button
-              transparent
-              onPress={() => this.props.navigation.goBack()}>
-              <Icon name="arrow-back" />
-            </Button>
-          </Left>
-          <Body>
-            <Title>DetailsScreen</Title>
-          </Body>
-          <Right />
-        </Header>
-        <Content padder>
-          {this.renderLoadoutSummary(this.props.navigation.state.params.loadout)}
-          {this.renderLoadoutItems(this.props.navigation.state.params.loadout)}
-        </Content>
-      </Container>
-    );
+    if (!this.state.isReady) {
+      return (
+        <AppLoading
+          startAsync={this._loadAssetsAsync.bind(this)}
+          onFinish={() => this.setState({ isReady: true })}
+          onError={console.warn}
+        />
+      );
+    }
+    else
+    {
+      return (
+        <Container>
+          <Header>
+            <Left>
+              <Button
+                transparent
+                onPress={() => this.props.navigation.goBack()}>
+                <Icon name="arrow-back" />
+              </Button>
+            </Left>
+            <Body>
+              <Title>DetailsScreen</Title>
+            </Body>
+            <Right />
+          </Header>
+          <Content padder>
+            {this.renderLoadoutSummary(this.props.navigation.state.params.loadout)}
+            {this.renderLoadoutItems(this.props.navigation.state.params.loadout)}
+          </Content>
+        </Container>
+      );
+    }
   }
 }
 

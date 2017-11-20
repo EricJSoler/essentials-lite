@@ -299,7 +299,7 @@ const WrestlingPractice = {
     guid: '694840D5-88F4-4250-94FF-A820377CF9FB',
 	author: 'Michael Soler',
     category: 'testCategory',
-    description: 'Be ready for battle in the practice room with all the essential wrestling gear',
+    description: 'Get ready for battle in the practice room with all the essential wrestling gear',
     displayName: 'Wrestling Practice',
     imageUri: 'https://upload.wikimedia.org/wikipedia/en/6/6e/USA_Wrestling_logo.jpg',
     items: [WorkoutShirt, WorkoutShorts, WrestlingShoes, WrestlingSocks, WaterBottle, WrestlingBag]
