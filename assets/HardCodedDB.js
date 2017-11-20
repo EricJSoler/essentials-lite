@@ -2,7 +2,7 @@
 
 export function getTrendingList()
 {
-    var list = [CampingLoadout, SkiingLoadOut];
+    var list = [CampingLoadout, SkiingLoadOut, WrestlingPractice];
 
     return list;
 }
@@ -40,6 +40,9 @@ export function  getEntries(name)
 // Templates
 // Generate guid using this website with the check boxes UPPERCase, Hyphens, and UrlEncode Set
 // https://www.guidgenerator.com/online-guid-generator.aspx 
+
+
+
 const EmptyItem =
     {
         guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
@@ -122,7 +125,7 @@ const Ski =
 {
     guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
     displayName: 'Skis',
-    description: 'You need something to shred the pow. Choose your weapon wisely.',
+    description: 'You need something to shred the pow. Choose your weapon wisely. I suggest you go to a ski shop to get their recomendaiton for your size and ski level.',
     imageUri: 'https://images.evo.com/imgp/700/106007/451892/clone.jpg',
     adUri: 'https://www.evo.com/outlet/skis/line-blend-2017#image=106007/451892/clone.jpg'
 }
@@ -155,7 +158,7 @@ const Pants =
 {
     guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
     displayName: 'Ski Pants',
-    description: 'Stay dry in overalls',
+    description: 'Overall pants are the best to stay dry.',
     imageUri:'https://images.evo.com/imgp/700/115866/526678/ride-central-bib-pants-black-charcoal-melange.jpg',
     adUri: 'https://www.evo.com/shell-pants/ride-central-bib'
 }
@@ -163,7 +166,7 @@ const Boots =
 {
     guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
     displayName: 'Ski Boots',
-    description: 'Full Tilt boots for a full send day',
+    description: 'Full Tilt boots for a full send day. You need to go to a ski shop to get fitted into the right pair of boots.',
     imageUri: 'https://images.evo.com/imgp/700/122060/518186/clone.jpg',
     adUri: 'https://www.evo.com/alpine-ski-boots/full-tilt-be-pro-ltd#image=122060/518186/clone.jpg'
 }
@@ -182,7 +185,7 @@ const Gloves =
 {
     guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
     displayName: 'Gloves',
-    description: 'Keep your hands warm',
+    description: 'It is important to invest in quality gloves to keep your hands warm',
     imageUri: 'https://images.evo.com/imgp/700/106309/466590/hestra-army-leather-gore-tex-gloves-black.jpg',
     adUri: 'https://www.evo.com/gloves/hestra-army-leather-gore-tex#image=106309/466590/hestra-army-leather-gore-tex-gloves-black.jpg'
 
@@ -190,8 +193,8 @@ const Gloves =
 const BeerKoozie =
 {
     guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
-    displayName: 'beer koozie',
-    description: 'Just because you beer is cold doesn\'t mean your hands need to be',
+    displayName: 'Beer koozie',
+    description: 'Just because your beer is cold doesn\'t mean your hands need to be',
     imageUri: 'https://images-na.ssl-images-amazon.com/images/I/91eKV6bJ06L._SL1500_.jpg',
     adUri: 'https://www.amazon.com/QualityPerfection-American-Neoprene-Insulation-Independence/dp/B071FRGRLV/ref=sr_1_32?s=home-garden&ie=UTF8&qid=1511067834&sr=1-32&keywords=beer+koozie'
 
@@ -200,7 +203,7 @@ const SkiPoles =
 {
     guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
     displayName: 'Ski poles',
-    description: 'Ski poles help you get around',
+    description: 'Ski poles help you get around, and make gnarly turns',
     imageUri: 'https://images.evo.com/imgp/700/122053/511824/line-skis-wallischtick-ski-poles-2018-black.jpg',
     adUri: 'https://www.evo.com/ski-poles/line-skis-wallischtick#image=122053/511824/line-skis-wallischtick-ski-poles-2018-black.jpg'
 }
@@ -227,10 +230,79 @@ const SkiSocks =
 const SkiingLoadOut = {
     guid: '694840D5-88F4-4250-94FF-A820377CF9FB',
     category: 'testCategory',
-    description: 'Kill it on your first day on the slopes?',
+    description: 'Kill it on your first day on the slopes!',
     displayName: 'Skiing',
     imageUri: 'https://images.evo.com/imgp/700/106007/451892/clone.jpg',
     items: [Ski,Bindings, SkiPoles, Jacket, Pants, Goggles, Gloves, Helmet, Beer, BeerKoozie]
+
+}
+
+
+const WorkoutShirt = 
+{
+    guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
+    displayName: 'Dry Fit shirt',
+    description: 'These shirts wick away sweat and keep you cool while training',
+    imageUri: 'https://www.johnnymacs.com/content/images/thumbs/0020796_mens-nike-legend-20-training-t-shirt_550.jpeg',
+    adUri: 'https://www.amazon.com/Legend-2-0-Short-Sleeve-Silver/dp/B010RRW11Q/ref=sr_1_10?s=apparel&amp;ie=UTF8&amp;qid=1511131306&amp;sr=1-10&amp;nodeID=7147441011&amp;psd=1&amp;keywords=nike+shirt&_encoding=UTF8&tag=ericjsoler-20&linkCode=ur2&linkId=0f4cfd0cae3122e58e38d89c6f0eb37b&camp=1789&creative=9325'
+}
+
+const WorkoutShorts =
+{
+    guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
+    displayName: 'Fight Shorts',
+    description: 'You need to wear shorts that don\'t have pockets to prevent hand injuries, I suggest fight shorts',
+    imageUri: 'https://images-na.ssl-images-amazon.com/images/I/61-ZwBCBSfL._SL1024_.jpg',
+    adUri: 'https://www.amazon.com/CLINCH-GEAR-Shorts-Size-30-Pewter/dp/B00UB5730Y/ref=sr_1_28_sspa?s=apparel&amp;ie=UTF8&amp;qid=1511130794&amp;sr=1-28-spons&amp;nodeID=1046660&amp;psd=1&amp;keywords=usa+wrestling+fight+shorts&amp;psc=1&_encoding=UTF8&tag=ericjsoler-20&linkCode=ur2&linkId=c3a6dd3ba500065de1828553d049d73c&camp=1789&creative=9325'
+}
+
+const WrestlingShoes =
+{
+    guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
+    displayName: 'Wrestling Shoes',
+    description: 'Quality wrestling shoes are important for performance. I suggest adidas Performance Men\'s Adizero Wrestling XIV Wrestling Shoes or Nike Men\'s Inflict 3 Wrestling Shoes',
+    imageUri: 'http://weplaysports.com/media/images/ADM29839-Large.jpg',
+    adUri: 'https://www.amazon.com/adidas-Adizero-Wrestling-Shoes-Black/dp/B00JR4V7OI/ref=sr_1_cc_1?s=aps&amp;ie=UTF8&amp;qid=1511132232&amp;sr=1-1-catcorr&amp;keywords=Nike+inflict+wrestling+shoes&_encoding=UTF8&tag=ericjsoler-20&linkCode=ur2&linkId=8e2a25f1cb47ecd2304efb561d135ee4&camp=1789&creative=9325'
+}
+
+
+const WrestlingSocks = 
+{
+    guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
+    displayName: 'Wrestling Socks',
+    description: 'Every wrestler knows you wear high socks... ',
+    imageUri: 'https://images-na.ssl-images-amazon.com/images/I/81PTFhxgEwL._SL1500_.jpg',
+    adUri: 'https://www.amazon.com/dp/B010RWD4GM/ref=twister_B06Y4CJVQY?_encoding=UTF8&amp;psc=1&amp;th=1&_encoding=UTF8&tag=ericjsoler-20&linkCode=ur2&linkId=eb07788e95d591b0699f07cecb38f22f&camp=1789&creative=9325'
+}
+
+const WaterBottle = 
+{
+    guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
+    displayName: 'Water Bottle',
+    description: 'Hydration is important for any physical activity',
+    imageUri: 'https://images-na.ssl-images-amazon.com/images/I/61ZFTKhFdwL._SL1426_.jpg',
+    adUri: 'https://www.amazon.com/dp/B00VKLNXKM/ref=twister_B00GA02OGW?&_encoding=UTF8&tag=ericjsoler-20&linkCode=ur2&linkId=44c74ea29528b02db83ff43aebf4869a&camp=1789&creative=9325'
+}
+const WrestlingBag = 
+{
+    guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
+    displayName: 'Wrestling Bag',
+    description: 'This is the best bag to carry your gear.',
+    imageUri: 'https://images-na.ssl-images-amazon.com/images/I/91VZWjxJTNL._SL1500_.jpg',
+    adUri: 'https://www.amazon.com/ASICS-Gear-Bag-Black-Size/dp/B0000C07XF/ref=sr_1_1?s=sporting-goods&amp;ie=UTF8&amp;qid=1511133598&amp;sr=1-1&amp;keywords=Wrestling+bag&amp;dpID=51ltIsuWEBL&amp;preST=_SY300_QL70_&amp;dpSrc=srch&_encoding=UTF8&tag=ericjsoler-20&linkCode=ur2&linkId=0091539195604398c653c0f3ba226eb3&camp=1789&creative=9325'
+}
+
+
+
+
+const WrestlingPractice = {
+    guid: '694840D5-88F4-4250-94FF-A820377CF9FB',
+	author: 'Michael Soler',
+    category: 'testCategory',
+    description: 'Be ready for battle in the practice room with all the essential wrestling gear',
+    displayName: 'Wrestling Practice',
+    imageUri: 'https://upload.wikimedia.org/wikipedia/en/6/6e/USA_Wrestling_logo.jpg',
+    items: [WorkoutShirt, WorkoutShorts, WrestlingShoes, WrestlingSocks, WaterBottle, WrestlingBag]
 
 }
 
