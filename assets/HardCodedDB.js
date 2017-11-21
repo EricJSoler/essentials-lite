@@ -119,7 +119,7 @@ const CampingLoadout = {
 }
 
 
-// m
+//ski loadout
 
 const Ski =
 {
@@ -237,7 +237,7 @@ const SkiingLoadOut = {
 
 }
 
-
+//wrestlingLoadout
 const WorkoutShirt = 
 {
     guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
@@ -255,7 +255,14 @@ const WorkoutShorts =
     imageUri: 'https://images-na.ssl-images-amazon.com/images/I/61-ZwBCBSfL._SL1024_.jpg',
     adUri: 'https://www.amazon.com/CLINCH-GEAR-Shorts-Size-30-Pewter/dp/B00UB5730Y/ref=sr_1_28_sspa?s=apparel&amp;ie=UTF8&amp;qid=1511130794&amp;sr=1-28-spons&amp;nodeID=1046660&amp;psd=1&amp;keywords=usa+wrestling+fight+shorts&amp;psc=1&_encoding=UTF8&tag=ericjsoler-20&linkCode=ur2&linkId=c3a6dd3ba500065de1828553d049d73c&camp=1789&creative=9325'
 }
-
+const HeadGear =
+{
+    guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
+    displayName: 'Headgear',
+    description: 'You need headgear to protect your ears',
+    imageUri: 'https://images-na.ssl-images-amazon.com/images/I/61OW%2Bk85WNL._SL1001_.jpg',
+    adUri: "https://www.amazon.com/Cliff-Keen-Two-Tone-Signature-Wrestling/dp/B001M8P2TS/ref=sr_1_1?s=sporting-goods&amp;ie=UTF8&amp;qid=1511218406&amp;sr=1-1&amp;keywords=Cliff+Keen+Signature+Wrestling+Headgear&_encoding=UTF8&tag=ericjsoler-20&linkCode=ur2&linkId=5850a41b01269c86be79e0cfa6e5d66b&camp=1789&creative=9325"
+}
 const WrestlingShoes =
 {
     guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
@@ -299,12 +306,13 @@ const WrestlingPractice = {
     guid: '694840D5-88F4-4250-94FF-A820377CF9FB',
 	author: 'Michael Soler',
     category: 'testCategory',
-    description: 'Get ready for battle in the practice room with all the essential wrestling gear',
+    description: 'Be ready for battle in the practice room with all the essential wrestling gear',
     displayName: 'Wrestling Practice',
     imageUri: 'https://upload.wikimedia.org/wikipedia/en/6/6e/USA_Wrestling_logo.jpg',
-    items: [WorkoutShirt, WorkoutShorts, WrestlingShoes, WrestlingSocks, WaterBottle, WrestlingBag]
+    items: [WorkoutShirt, WorkoutShorts, WrestlingShoes, HeadGear, WrestlingSocks, WaterBottle, WrestlingBag]
 
 }
+//
 
 
 
