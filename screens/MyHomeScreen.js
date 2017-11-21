@@ -53,8 +53,15 @@ export default class MyHomeScreen extends React.Component {
   renderDataBaseLoadouts()
   {
     var trendingList = getTrendingList();
-    var myNavigator = this.props.navigation; //this.props.navigation.navigate("Details", {loadout: arrEntry}) //'https://cdn0.iconfinder.com/data/icons/smile-emoticons/78/smyle_emoticons-07-512.png'
+    var myNavigator = this.props.navigation; //TODO: can i remove? this.props.navigation.navigate("Details", {loadout: arrEntry}) //'https://cdn0.iconfinder.com/data/icons/smile-emoticons/78/smyle_emoticons-07-512.png'
+    
     return trendingList.map( (arrEntry, index, listItself) => {
+      var author = arrEntry.author;
+      if(author === undefined)
+      {
+        author = '';
+      }
+
       return (
         (
           <Card key={index} style={{flex: 1}} >
@@ -63,6 +70,7 @@ export default class MyHomeScreen extends React.Component {
                 <Thumbnail source={{uri: arrEntry.imageUri}} />  
                 <Body>  
                   <Text>{arrEntry.displayName}</Text>
+                  <Text note>{author}</Text>
                 </Body>
               </Left>
             </CardItem>

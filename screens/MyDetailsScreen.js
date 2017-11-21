@@ -47,6 +47,12 @@ renderLoadoutSummary(arrEntry, index)
     index = 0;
   }
 
+  var author = arrEntry.author;
+  if(author === undefined)
+  {
+    console.log('warning: author was undefined when rendering loadout summary');
+  }
+
   return(
     (
       <Card key={index} style={{flex: 1}} >
@@ -55,7 +61,7 @@ renderLoadoutSummary(arrEntry, index)
             <Thumbnail source={{uri: arrEntry.imageUri}} />
             <Body>
               <Text>{arrEntry.displayName}</Text>
-              <Text note>11/20/2017</Text>
+              <Text note>{author}</Text>
             </Body>
           </Left>
         </CardItem>
@@ -154,7 +160,7 @@ renderLoadoutItems(loadout)
     else
     {
       return (
-        <Container>
+        <Container >
           <Header>
             <Left>
               <Button
