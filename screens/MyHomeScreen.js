@@ -129,7 +129,7 @@ export default class MyHomeScreen extends React.Component {
               <CardItem button onPress={() => this.props.navigation.navigate("Details", {loadOut: 'load1'})}>
                 <Body>
                   <Text>Check out what we got for you this week!</Text>
-                  <Button onPress={() => this.props.navigation.navigate("SignInScreenAdmin")}>
+                  <Button  small light onPress={() => this.props.navigation.navigate("SignInScreenAdmin")}>
                       <Text>Click Me!</Text>
                   </Button>
                 </Body>
