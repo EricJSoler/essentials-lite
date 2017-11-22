@@ -391,3 +391,79 @@ const HikingLoadout = {
     items: [Daypack, HikingBoots]
 
 }
+// SoccerLoadout
+
+const SoccerBall = {
+    guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
+    displayName: 'Soccer Ball',
+    description: 'A quality ball makes all the difference. Size 5 is the standard!',
+    imageUri: 'https://images-na.ssl-images-amazon.com/images/I/81psxlbbwxL._SL1500_.jpg',
+    adUri: 'https://www.amazon.com/dp/B00QSBNIPY/ref=twister_B00U60HL6U?&_encoding=UTF8&tag=ericjsoler-20&linkCode=ur2&linkId=bde20f9010e32afce1a8afaf4e07a1a4&camp=1789&creative=9325'
+
+}
+const SoccerCleats =
+{
+    guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
+    displayName: 'Soccer Cleats',
+    description: 'Nike Men\'s Mercurial is a quality cleat. The embossed ribbing aids with ball control, which you will need if you\'re planning on schooling everyone',
+    imageUri: 'https://images-na.ssl-images-amazon.com/images/I/812hcASVODL._UX500_.jpg',
+    adUri: 'https://www.amazon.com/NIKE-Mercurial-Victory-Laser-Orange/dp/B01N1UQL4Z/ref=sr_1_76?s=apparel&amp;ie=UTF8&amp;qid=1511234484&amp;sr=1-76&amp;nodeID=679296011&amp;psd=1&_encoding=UTF8&tag=ericjsoler-20&linkCode=ur2&linkId=4e0fb343995cd3a248c1fb6c2d8e07e8&camp=1789&creative=9325'
+}
+const ShinGuards =
+{
+    guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
+    displayName: 'Shin Guards',
+    description: 'Nike Lite shin guards have a light durable shell and it includes Dry-fit sleeves to secure them.',
+    imageUri: 'https://images-na.ssl-images-amazon.com/images/I/818tgk-DKjL._SL1500_.jpg',
+    adUri: 'https://www.amazon.com/Nike-Mercurial-Lite-Soccer-Guards/dp/B00GST7MLC/ref=zg_bs_3418401_6?_encoding=UTF8&amp;refRID=E1AQWXHT2WEX9DW9TPKW&_encoding=UTF8&tag=ericjsoler-20&linkCode=ur2&linkId=6aadbc729438460f230831f351261c3a&camp=1789&creative=9325'
+}
+const SoccerSocks =
+{
+    guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
+    displayName: 'Long Socks',
+    description: 'Climalite socks are great for keeping your feet cool and dry. They also help to keep your shin guards in place!',
+    imageUri: 'https://images-na.ssl-images-amazon.com/images/I/611EyU-FbiL._SL1200_.jpg',
+    adUri: 'https://www.amazon.com/dp/B00ECZGWSS/ref=twister_B01C9I1ZBI?th=1&_encoding=UTF8&tag=ericjsoler-20&linkCode=ur2&linkId=cf59bd0206c53372b26014c54ff34bc1&camp=1789&creative=9325'
+}
+const UnderArmourShorts =
+{
+    guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
+    displayName: 'Compression Mid Shorts',
+    description: 'They reduce vibration in the leg, reduce chafing and improve circulation.',
+    imageUri: 'https://images-na.ssl-images-amazon.com/images/I/71KardKbi4L._SL1000_.jpg',
+    adUri: 'https://www.amazon.com/Under-Armour-HeatGear-Compression-Shorts/dp/B00KXAGD5S/ref=sr_1_25?s=sporting-goods&amp;ie=UTF8&amp;qid=1511236411&amp;sr=1-25&amp;keywords=compression+shorts&_encoding=UTF8&tag=ericjsoler-20&linkCode=ur2&linkId=45fd6a4b94fb71ce0b6d915f07c67724&camp=1789&creative=9325'
+}
+const SoccerShorts=
+{
+    guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
+    displayName: 'Soccer Shorts',
+    description: 'If you want to stay cool and comfortable while playing, get yourself a pair of soccer shorts.',
+    imageUri: 'https://images-na.ssl-images-amazon.com/images/I/81%2Bfq84VAKL._SL1500_.jpg',
+    adUri: 'https://www.amazon.com/adidas-Performance-Tastigo-Shorts-Large/dp/B00LEXXHBQ/ref=sr_1_7?s=sporting-goods&amp;ie=UTF8&amp;qid=1511238126&amp;sr=1-7&amp;keywords=soccer+shorts&_encoding=UTF8&tag=ericjsoler-20&linkCode=ur2&linkId=54a7cc67c8842d0b27711978c43e917d&camp=1789&creative=9325'
+}
+const KeeperGloves =
+{
+    guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
+    displayName: 'Keeper Gloves',
+    description: 'Good keepers have good gloves! They will save you from wrist/finger rolls, and help you make game-changing saves.',
+    imageUri: 'https://images-na.ssl-images-amazon.com/images/I/81Kmbl1hXxL._SL1500_.jpg',
+    adUri: 'https://www.amazon.com/GK-Soccer-Goalkeeper-Gloves-Fingersaves/dp/B0741G5YQD/ref=sr_1_2_sspa?s=sporting-goods&amp;ie=UTF8&amp;qid=1511238565&amp;sr=1-2-spons&amp;keywords=soccer+gloves&amp;psc=1&_encoding=UTF8&tag=ericjsoler-20&linkCode=ur2&linkId=e3b9ff5598cd11a58f2464f810958363&camp=1789&creative=9325'
+}
+const DuffelBag =
+{
+    guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
+    displayName: 'Duffel bag',
+    description: 'You don\'t want to carry all your equipment in your hands.',
+    imageUri: 'https://images-na.ssl-images-amazon.com/images/I/71rcqqNcn5L._SL1200_.jpg',
+    adUri: 'https://www.amazon.com/adidas-Team-Speed-Medium-Duffel/dp/B0058V7M3Y/ref=sr_1_20?s=sporting-goods&amp;ie=UTF8&amp;qid=1511239672&amp;sr=1-20&amp;keywords=soccer+bag&_encoding=UTF8&tag=ericjsoler-20&linkCode=ur2&linkId=99220d32120252b631e3e2c77ffb282f&camp=1789&creative=9325'
+}
+
+const SoccerLoadout = {
+    guid: '40118D61-18E1-48F9-9A81-EE3E91396554',
+    author: 'Andrei Nutu',
+    category:'testcategory',
+    description:'Put your FIFA skills to good use on the pitch!',
+    displayName:'Soccer Essentials',
+    imageUri: 'https://s-media-cache-ak0.pinimg.com/originals/91/61/3b/91613b425d9b4bfda3ee6043247bdc4e.jpg',
+    items: [SoccerBall, SoccerCleats, ShinGuards, SoccerSocks, SoccerShorts, KeeperGloves, DuffelBag, UnderArmourShorts]
+}
