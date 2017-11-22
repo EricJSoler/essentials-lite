@@ -5,7 +5,7 @@ import {Form, Item, Label , Input, Button} from 'native-base';
 var height = Dimensions.get('window').height;
 var width = Dimensions.get('window').width;
 
-class SignIn extends React.Component{
+export default class SignInScreen extends React.Component{
 
     state = {
         email: "",
@@ -67,7 +67,4 @@ const styles = {
         justifyContent: 'center',
         margin: 10
     }
-   
-
 }
-export default SignIn;
