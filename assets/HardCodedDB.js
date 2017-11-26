@@ -2,7 +2,7 @@
 
 export function getTrendingList()
 {
-    var list = [CampingLoadout, SkiingLoadOut, WrestlingPractice,SoccerLoadOut];
+    var list = [CampingLoadout, SkiingLoadOut, WrestlingPractice,SoccerLoadout];
 
     return list;
 }
