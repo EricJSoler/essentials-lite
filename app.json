@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "essentials-lite",
-    "description": "An empty new project",
+    "name": "Essentials-lite",
+    "description": "Essentials-lite helps you get the essentials you need to jump right into your favorite new activity!",
     "slug": "essentials-lite",
-    "privacy": "public",
+    "privacy": "unlisted",
     "sdkVersion": "23.0.0",
-    "version": "1.0.0",
+    "version": "1.0.5",
     "orientation": "portrait",
     "primaryColor": "#cccccc",
     "icon": "./assets/icon.png",
@@ -15,7 +15,8 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.soulsoftware.essentialslite"
     }
   }
 }
