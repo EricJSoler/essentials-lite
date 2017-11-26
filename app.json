@@ -5,7 +5,7 @@
     "slug": "essentials-lite",
     "privacy": "unlisted",
     "sdkVersion": "23.0.0",
-    "version": "1.0.1",
+    "version": "1.0.5",
     "orientation": "portrait",
     "primaryColor": "#cccccc",
     "icon": "./assets/icon.png",
@@ -15,7 +15,7 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": false,
+      "supportsTablet": true,
       "bundleIdentifier": "com.soulsoftware.essentialslite"
     }
   }

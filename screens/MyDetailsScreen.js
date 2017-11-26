@@ -51,6 +51,7 @@ renderLoadoutSummary(arrEntry, index)
   if(author === undefined)
   {
     console.log('warning: author was undefined when rendering loadout summary');
+    author = '';
   }
 
   return(
