@@ -1,6 +1,7 @@
 import React from 'react';
 import {View, Text, Dimensions, Image, StyleSheet} from 'react-native';
-import {Form, Item, Label , Input, Button} from 'native-base';
+import {Form, Item, Label , Input, Button } from 'native-base';
+
 
 var height = Dimensions.get('window').height;
 var width = Dimensions.get('window').width;
@@ -25,6 +26,7 @@ export default class SignInScreen extends React.Component{
           <View style={{flex: 1}}>
 				
 					<View style={styles.inputStyle}>
+					
 						<Form>
 							<Item floatingLabel>
 								<Label>Email</Label>
