@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "Essentials-lite",
-    "description": "Essentials-lite helps you get the essentials you need to jump right into your favorite new activity!",
-    "slug": "essentials-lite",
+    "name": "Essential Loadouts",
+    "description": "Essential Loadouts helps you get the gear you need to jump right into your favorite new activity!",
+    "slug": "Essentials",
     "privacy": "unlisted",
     "sdkVersion": "23.0.0",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "orientation": "portrait",
     "primaryColor": "#cccccc",
     "icon": "./assets/icon.png",
@@ -16,7 +16,10 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.soulsoftware.essentialslite"
-    }
+      "bundleIdentifier": "com.soulsoftware.essentialloadouts",
+      "isRemoteJSEnabled": true
+    },
+    "scheme": "EssentialLoadouts"
+    
   }
 }
