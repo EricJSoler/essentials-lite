@@ -2,7 +2,6 @@ import React from "react";
 import { StatusBar, Image,TouchableOpacity } from "react-native";
 import { Container, Thumbnail,  Header, Title, Left, Icon, Right, Button, Body, Content,Text, Card, CardItem } from "native-base";
 import {getTrendingList} from "../assets/HardCodedDB";
-import LoadoutSummaryView from "../components/LoadoutSummaryView";
 import { AppLoading, Font, Asset } from 'expo';
 import { FontAwesome } from '@expo/vector-icons';
 
@@ -126,12 +125,9 @@ export default class MyHomeScreen extends React.Component {
           </Header>
           <Content padder>
             <Card>
-              <CardItem button onPress={() => this.props.navigation.navigate("Details", {loadOut: 'load1'})}>
+              <CardItem>
                 <Body>
                   <Text>Check out what we got for you this week!</Text>
-                  <Button  small light onPress={() => this.props.navigation.navigate("SignInScreenAdmin")}>
-                      <Text>Click Me!</Text>
-                  </Button>
                 </Body>
               </CardItem>
             </Card>

@@ -2,7 +2,6 @@ import React from 'react'
 import { StackNavigator } from 'react-navigation';
 import MyHomeScreen from '../screens/MyHomeScreen';
 import MyDetailsScreen from '../screens/MyDetailsScreen';
-import SignInScreen from '../screens/SignInScreen';
 
 const RootNavigator = StackNavigator(
   {
@@ -11,9 +10,6 @@ const RootNavigator = StackNavigator(
     },
     Details: {
       screen: MyDetailsScreen,
-    },
-    SignInScreenAdmin: {
-      screen: SignInScreen
     }
   },
   {
