@@ -1,5 +1,5 @@
 import React from "react";
-import { StatusBar, Image,TouchableOpacity } from "react-native";
+import { StatusBar, Image,TouchableOpacity, View } from "react-native";
 import { Container, Thumbnail,  Header, Title, Left, Icon, Right, Button, Body, Content,Text, Card, CardItem } from "native-base";
 import {getTrendingList} from "../assets/HardCodedDB";
 import { AppLoading, Font, Asset } from 'expo';
@@ -60,6 +60,9 @@ export default class MyHomeScreen extends React.Component {
       {
         author = '';
       }
+      else{
+        author = 'by ' + author;
+      }
 
       return (
         (
@@ -68,7 +71,7 @@ export default class MyHomeScreen extends React.Component {
               <Left>
                 <Thumbnail source={{uri: arrEntry.imageUri}} />  
                 <Body>  
-                  <Text>{arrEntry.displayName}</Text>
+                  <Text style={{fontSize: 18}}>{arrEntry.displayName}</Text>
                   <Text note>{author}</Text>
                 </Body>
               </Left>
@@ -87,9 +90,9 @@ export default class MyHomeScreen extends React.Component {
             </CardItem>
             <CardItem button onPress={() => this.navigateToDetailsPageForLoadout(arrEntry)}>
               <Left>
-                <Button transparent textStyle={{color: '#87838B'}}>
-                  <Icon name="logo-github" />
-                  <Text>1,926 stars</Text>
+                <Button transparent textStyle={{color: '#87838B'}} onPress={() => this.navigateToDetailsPageForLoadout(arrEntry)}>
+                  <Icon name="ios-more" />
+                  <Text>Tap to see it</Text>
                 </Button>
               </Left>
             </CardItem>
@@ -116,19 +119,18 @@ export default class MyHomeScreen extends React.Component {
       return (
         <Container>
           <Header>
-            <Left>
-            </Left>
             <Body>
-              <Title>We got you</Title>
+              <Title>Essential Loadouts Home</Title>
             </Body>
-            <Right />
           </Header>
           <Content padder>
             <Card>
               <CardItem>
-                <Body>
-                  <Text>Check out what we got for you this week!</Text>
-                </Body>
+                  <Body style={{ flex: 1,  justifyContent: 'center', alignItems: 'center' }}>
+               
+                      <Text style={{}}>Check out our loadouts!</Text>
+                
+                  </Body>
               </CardItem>
             </Card>
             {this.renderDataBaseLoadouts()}    

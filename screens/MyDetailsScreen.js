@@ -1,6 +1,6 @@
 import React from "react";
 import { StatusBar, View, Image } from "react-native";
-import { Container, Thumbnail, Header, Title, Left, Icon, Right, Button, Body, Content,Text, Card, CardItem } from "native-base";
+import { Container, Thumbnail, Header, Title, Left, Icon, Center, Right, Button, Body, Content,Text, Card, CardItem } from "native-base";
 import { WebBrowser, AppLoading, Font, Asset} from 'expo';
 import { FontAwesome } from '@expo/vector-icons';
 
@@ -54,14 +54,20 @@ renderLoadoutSummary(arrEntry, index)
     author = '';
   }
 
+  var descriptionToDisplay = arrEntry.detailedDescription;
+  if(descriptionToDisplay === undefined)
+  {
+    descriptionToDisplay = arrEntry.description;
+  }
+
   return(
     (
       <Card key={index} style={{flex: 1}} >
-        <CardItem >
+        <CardItem>
           <Left>
             <Thumbnail source={{uri: arrEntry.imageUri}} />
             <Body>
-              <Text>{arrEntry.displayName}</Text>
+              <Text bold>{arrEntry.displayName}</Text>
               <Text note>{author}</Text>
             </Body>
           </Left>
@@ -74,17 +80,9 @@ renderLoadoutSummary(arrEntry, index)
                 /> */}
             {/* </View> */}
             <Text>
-            {arrEntry.description}
+            {descriptionToDisplay}
             </Text>
           </Body>
-        </CardItem>
-        <CardItem>
-          <Left>
-            <Button transparent textStyle={{color: '#87838B'}}>
-              <Icon name="logo-github" />
-              <Text>1,926 stars</Text>
-            </Button>
-          </Left>
         </CardItem>
       </Card>
     )  
@@ -112,23 +110,25 @@ renderLoadoutItems(loadout)
             <Left>
                 {/* <Thumbnail source={{uri: 'https://cdn0.iconfinder.com/data/icons/smile-emoticons/78/smyle_emoticons-07-512.png'}} /> */}
                 {/* <Body>  */}
-                <Button transparent textStyle={{color: '#87838B'}} onPress={ () => this._handleItemPress(item)}>
-                  <Icon name='checkbox' />
+                <Button transparent textStyle={{color: 'black'}} onPress={ () => this._handleItemPress(item)}>
+                  <Icon name='checkbox' style={{fontSize: 20, color: 'black'}}/>
                 </Button>
                 
                 <Text>{item.displayName}</Text>
                 {/* </Body> */}
             </Left>
           </CardItem>
-          <CardItem  >
-            <Body>
-              <View style={{flex: 1, width: 200, height: 200, margin: 5}}>         
+          <CardItem>
+            <View style={{flex: 1, width: 200, height: 200, margin: 5}}>         
 
                 <Image 
                 style={{flex:1, height: undefined, width: undefined, resizeMode: 'contain'}}
                   source={{uri: item.imageUri}}
                 />
-                </View>
+            </View>
+          </CardItem>
+          <CardItem  >
+            <Body>
                 <Text>
                   {item.description}
                 </Text>
@@ -170,13 +170,22 @@ renderLoadoutItems(loadout)
                 <Icon name="arrow-back" />
               </Button>
             </Left>
-            <Body>
-              <Title>DetailsScreen</Title>
+            <Body style={{ flex: 3}}>
+              <Title>Loadout Viewer</Title>
             </Body>
-            <Right />
+            <Right/>
+            
           </Header>
           <Content padder>
             {this.renderLoadoutSummary(this.props.navigation.state.params.loadout)}
+            <Card>
+              <CardItem>
+                <Left>
+                <Icon name='ios-clipboard-outline' style={{fontSize: 40, color: 'black'}}/>
+                  <Text>Scroll down and find what you need</Text>
+                </Left>
+              </CardItem>
+            </Card>
             {this.renderLoadoutItems(this.props.navigation.state.params.loadout)}
           </Content>
         </Container>
