@@ -400,8 +400,8 @@ const NewYearPartyLoadout = {
     guid: '40118D61-18E1-48F9-9A81-EE3E91396554',
     category:'testcategory',
     description: 'Get the motivation to throw your New Year\'s Eve party and theme it the right way.',
-    detailedDescription: 'It doesn\'t take much to throw an awesome  themed New Year\'s Eve party. All you have to do is pickup the phone give a couple pals a call, pour a couple drinks of whatever suits your fancy, and spend maybe 15 minutes decorating,  maybe little longer if you pass out from blowing up balloons.',
-    displayName:'New Year\'s Eve Party Theme',
-    imageUri: 'https://static.pexels.com/photos/261485/pexels-photo-261485.jpeg',
+    detailedDescription: 'It doesn\'t take much to throw an awesome  themed New Year\'s Eve party. All you have to do is pickup the phone give a couple pals a call, pour a couple drinks of whatever suits your fancy, and spend maybe 15 minutes decorating or a little longer if you pass out from blowing up balloons.',
+    displayName:'New Year\'s Eve Party',
+    imageUri: 'http://cliparting.com/wp-content/uploads/2016/07/Free-party-clipart-free-clipart-graphics-images-and-photos-image-4.jpeg',
     items: [NewYearsLights,NewYearsBanner, NewYearsBaloons, NewYearsPartyHats]
 }
