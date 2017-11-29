@@ -2,7 +2,7 @@
 
 export function getTrendingList()
 {
-    var list = [CampingLoadout, SkiingLoadOut, WrestlingPractice,SoccerLoadout];
+    var list = [WrestlingPractice, NewYearPartyLoadout, CampingLoadout, SkiingLoadOut, SoccerLoadout];
 
     return list;
 }
@@ -12,7 +12,7 @@ const BugSpray =
 {
     guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
     displayName: 'Bug Spray',
-    description: '\tJust about anywhere you camp with temperatures about 60f you\'re going to need bugspray',
+    description: '\tJust about anywhere you camp with temperatures above 60f you\'re going to need bugspray',
     imageUri: 'https://images-na.ssl-images-amazon.com/images/I/71Vd-KQCgZL._SL1500_.jpg',
     adUri: 'https://www.amazon.com/Repel-Insect-Repellent-Single-Bottle/dp/B004H89KFC/ref=sr_1_1?s=sporting-goods&amp;ie=UTF8&amp;qid=1511060750&amp;sr=1-1&amp;keywords=bugspray&_encoding=UTF8&tag=ericjsoler-20&linkCode=ur2&linkId=27bf44bc002df4f42695f3877e25a8e4&camp=1789&creative=9325' 
 }
@@ -53,14 +53,23 @@ const CampChair =
     adUri: 'https://www.amazon.com/Coleman-Oversized-Quad-Chair-Cooler/dp/B0033990ZQ/ref=sr_1_3?s=sporting-goods&amp;ie=UTF8&amp;qid=1511068355&amp;sr=1-3&amp;keywords=camp+chair&_encoding=UTF8&tag=ericjsoler-20&linkCode=ur2&linkId=d0264765a91312223acc07c94911378c&camp=1789&creative=9325' 
 }
 
+const SleepingBag=
+{
+    guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
+    displayName: 'Cozy Sleeping Bag',
+    description: '\tYou need something to keep you warm at night. I always go for a heavier sleeping bag because I know I would rather be too hot than too cold.',
+    imageUri: 'https://images-na.ssl-images-amazon.com/images/I/61ijn88d2fL._SL1100_.jpg',
+    adUri: 'https://www.amazon.com/Bag-Envelope-Mummy-Lightweight-Waterproof-Activities-Rectangular/dp/B074W3GGJF/ref=sr_1_1_sspa?s=outdoor-recreation&amp;ie=UTF8&amp;qid=1511928159&amp;sr=1-1-spons&amp;keywords=sleeping+bag&amp;psc=1&_encoding=UTF8&tag=ericjsoler-20&linkCode=ur2&linkId=6ef41c9d382ce3a66e3ce2d3434f1d73&camp=1789&creative=9325' 
+}
+
 
 const CampingLoadout = {
     guid: '694840D5-88F4-4250-94FF-A820377CF9FB',
     category: 'testCategory',
     description: 'Who doesnt love camping?',
-    displayName: 'Camping',
+    displayName: 'First Time Camper',
     imageUri: 'https://imgs.tuts.dragoart.com/how-to-draw-a-tent_1_000000005120_5.jpg',
-    items: [Tent, TentFootPrint,MiniCampBurner, CampChair, BugSpray]
+    items: [Tent, TentFootPrint,SleepingBag,MiniCampBurner, CampChair, BugSpray]
 }
 
 
@@ -165,7 +174,7 @@ const SkiSocks =
 {
     guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
     displayName: 'Ski socks',
-    description: '\tSocks are important to keep your feet warm ',
+    description: '\tSocks are important to keep your feet warm and cotton just wont do',
     imageUri:'https://images.evo.com/imgp/700/122053/511824/line-skis-wallischtick-ski-poles-2018-black.jpg',
     adUri: 'https://www.evo.com/ski-poles/line-skis-wallischtick#image=122053/511824/line-skis-wallischtick-ski-poles-2018-black.jpg'
 }
@@ -176,8 +185,8 @@ const SkiingLoadOut = {
     guid: '694840D5-88F4-4250-94FF-A820377CF9FB',
     category: 'testCategory',
     description: 'Kill it on your first day on the slopes!',
-    detailedDescription: '',
-    displayName: 'Skiing',
+    detailedDescription: 'If its your first time skiing rent the skis, poles and boots. Other than that you might as well buy this other guy because it will come in handy in any cold weather.',
+    displayName: 'Simple Skiier',
     imageUri: 'https://images.evo.com/imgp/700/106007/451892/clone.jpg',
     items: [Ski,Bindings, SkiPoles, Jacket, Pants, Goggles, Gloves, Helmet, Beer, BeerKoozie]
 
@@ -330,7 +339,69 @@ const SoccerLoadout = {
     author: 'Andrei Nutu',
     category:'testcategory',
     description: 'Put your FIFA skills to good use on the pitch!',
-    displayName:'Soccer Essentials',
+    displayName:'Soccer Starter Pack',
     imageUri: 'https://s-media-cache-ak0.pinimg.com/originals/91/61/3b/91613b425d9b4bfda3ee6043247bdc4e.jpg',
     items: [SoccerBall, SoccerCleats, ShinGuards, SoccerSocks, SoccerShorts, KeeperGloves, DuffelBag, UnderArmourShorts]
+}
+
+
+
+
+// New years party loadout
+
+
+
+const NewYearsPartyHats =
+{
+    guid: '40118D61-18E1-48F9-9A81-EE3E91396554',
+    displayName: 'Party Hats!',
+    description: 'Halloween is over but party goers are always looking for ways to dress up without putting in too much effort. Help them out with these cheap fun packs of accessories that will turn your party into something special.',
+    imageUri: 'https://images-na.ssl-images-amazon.com/images/I/81f57sygaPL._SL1500_.jpg',
+    adUri: 'https://www.amazon.com/Gold-Legacy-Party-Accessory-count/dp/B004H2M9S8/ref=sr_1_12?ie=UTF8&amp;qid=1511884182&amp;sr=8-12&amp;keywords=new%2Byears%2Beve%2Bparty%2Bsupplies&amp;th=1&_encoding=UTF8&tag=ericjsoler-20&linkCode=ur2&linkId=f2b25344fb0e84fb5c6998a938ddcf3a&camp=1789&creative=9325'
+}
+
+const NewYearsBaloons =
+{
+    guid: '40118D61-18E1-48F9-9A81-EE3E91396554',
+    displayName: 'Themed Balloons',
+    description: 'Balloons... They\'re fun to pop and entertaining when thrown at people, not to mention they look great. You could even get creative and rig up a way to make them fall out of the ceiling when the ball drops at midnight!',
+    imageUri: 'https://images-na.ssl-images-amazon.com/images/I/81AW1ckP06L._SL1500_.jpg',
+    adUri: 'https://www.amazon.com/dp/B0779CXJQK/ref=sspa_dk_detail_2?psc=1&_encoding=UTF8&tag=ericjsoler-20&linkCode=ur2&linkId=789795b78c7a6c3411e27cb042d761b0&camp=1789&creative=9325'
+}
+
+const NewYearsBanner =
+{
+    guid: '40118D61-18E1-48F9-9A81-EE3E91396554',
+    displayName: 'Banner',
+    description:'Look, you need a sign to remind people why they\'re at your house. If you\'ve got the extra time make it yourself, but a Happy New Year sign is perfect for taking pictures in front of and keeping people in the mood of celebrating the New Year.',
+    imageUri:'https://images-na.ssl-images-amazon.com/images/I/61poikpjniL._SL1002_.jpg',
+    adUri: 'https://www.amazon.com/BESTOYARD-Banner-Hanging-Decorations-Supplies/dp/B07554677Q/ref=sr_1_20?ie=UTF8&amp;qid=1511884870&amp;sr=8-20&amp;keywords=new+years+eve+party+supplies&_encoding=UTF8&tag=ericjsoler-20&linkCode=ur2&linkId=98a88f402255ae47c4509a6ac59f47e4&camp=1789&creative=9325'
+}
+
+const NewYearsLights =
+{
+    guid: '40118D61-18E1-48F9-9A81-EE3E91396554',
+    displayName: 'Repurposed Christmas Lights',
+    description: 'It\'s only 6 days after Christmas. Chances are you haven\'t taken down all your Christmas lights. So why don\'t you re-purpose the white ones and get the ambiance just the way you like it. Although we\'re re-using Christmas decorations remember to at-least get rid of the tree.',
+    imageUri: 'https://images-na.ssl-images-amazon.com/images/I/61h7QWYfVbL._SL1280_.jpg',
+    adUri: 'https://www.amazon.com/Everglow-2980-22-Clear-White-Light/dp/B002LLGFJG/ref=sr_1_3?ie=UTF8&amp;qid=1511885156&amp;sr=8-3&amp;keywords=white+christmas+lights&_encoding=UTF8&tag=ericjsoler-20&linkCode=ur2&linkId=e22029797b608ad29e94e51c5a9bfae4&camp=1789&creative=9325' 
+}
+
+// const EmptyItem =
+// {
+//     guid: '40118D61-18E1-48F9-9A81-EE3E91396554',
+//     displayName: ,
+//     description:,
+//     imageUri:,
+//     adUri: 
+// }
+
+const NewYearPartyLoadout = {
+    guid: '40118D61-18E1-48F9-9A81-EE3E91396554',
+    category:'testcategory',
+    description: 'Get the motivation to throw your New Year\'s Eve party and theme it the right way.',
+    detailedDescription: 'It doesn\'t take much to throw an awesome  themed New Year\'s Eve party. All you have to do is pickup the phone give a couple pals a call, pour a couple drinks of whatever suits your fancy, and spend maybe 15 minutes decorating,  maybe little longer if you pass out from blowing up balloons.',
+    displayName:'New Year\'s Eve Party Theme',
+    imageUri: 'https://static.pexels.com/photos/261485/pexels-photo-261485.jpeg',
+    items: [NewYearsLights,NewYearsBanner, NewYearsBaloons, NewYearsPartyHats]
 }
