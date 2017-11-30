@@ -405,3 +405,53 @@ const NewYearPartyLoadout = {
     imageUri: 'http://cliparting.com/wp-content/uploads/2016/07/Free-party-clipart-free-clipart-graphics-images-and-photos-image-4.jpeg',
     items: [NewYearsLights,NewYearsBanner, NewYearsBaloons, NewYearsPartyHats]
 }
+// Stocking Stuffers LoadOut
+
+ const Stockings = {
+ 
+     guid: '40118D61-18E1-48F9-9A81-EE3E91396554',
+     displayName: 'Christmas Stocking',
+     description: 'If you haven\'t kept the Christmas stockings from the previous years, this is a classic stocking you can string up!',
+     imageUri:'https://secure.img2-fg.wfcdn.com/im/94565897/resize-h800%5Ecompr-r85/4536/45367368/Knitted+Stocking.jpg',
+     adUri: 'https://www.wayfair.com/holiday-decor/pdp/glitzhome-knitted-stocking-glho1928.html'
+ }
+
+
+
+  const IphoneXCase =
+ {
+     guid: '40118D61-18E1-48F9-9A81-EE3E91396554',
+     displayName:'Iphone X Marble Case' ,
+     description:'Chances are someone in your family just upgraded their Iphone, and is shopping for a dope case to show off their latest purchase.',
+     imageUri:'https://images-na.ssl-images-amazon.com/images/I/71ms22vGEXL._SL1500_.jpg',
+     adUri:'https://www.amazon.com/iPhone-TORRAS-Flexible-Silicone-Pattern/dp/B076JC1RNL/ref=sr_1_40?s=wireless&amp;ie=UTF8&amp;qid=1512009458&amp;sr=1-40&amp;refinements=p_n_feature_nine_browse-bin%3A17290046011&_encoding=UTF8&tag=ericjsoler-20&linkCode=ur2&linkId=304fb5b0ee70288435e3c62e5eadb40e&camp=1789&creative=9325'
+ }
+
+  const SteelFlask =
+ {
+    guid: '40118D61-18E1-48F9-9A81-EE3E91396554',
+     displayName:'Areaware Liquid Body Flask',
+     description: 'The flask puts an adult spin on the Christmas tradition, but its fun to have one of these guys hanging around for a quick top off this Christmas season! This the season to be tipsy!',
+     imageUri:'https://images-na.ssl-images-amazon.com/images/I/714bZRwoQhL._SL1500_.jpg',
+     adUri:'https://www.amazon.com/Areaware-PRFL1-Liquid-Body-Flask/dp/B00OVF6F04?&_encoding=UTF8&tag=ericjsoler-20&linkCode=ur2&linkId=36c7f03a77a2e7da46d1be8969d83b0b&camp=1789&creative=9325' 
+ }
+
+  const ScalpMassager =
+ {
+     guid: '40118D61-18E1-48F9-9A81-EE3E91396554',
+     displayName: 'Scalp Head Massager',
+     description:'It\'s bound to get stressfull when the whole family is gathered together for Christmas, so pass these around. They come in packs of 3 and are super relaxing!',
+     imageUri:'https://www.amazon.com/ROSENICE-Massager-Therapeutic-Scratcher-Relaxation/dp/B074QPKSX7/ref=sr_1_18_a_it?ie=UTF8&qid=1512011064&sr=8-18&keywords=scalp+massager',
+     adUri: 'https://www.amazon.com/ROSENICE-Massager-Therapeutic-Scratcher-Relaxation/dp/B074QPKSX7/ref=sr_1_18_a_it?ie=UTF8&amp;qid=1512011064&amp;sr=8-18&amp;keywords=scalp+massager&_encoding=UTF8&tag=ericjsoler-20&linkCode=ur2&linkId=f22516f1873b7f57df56f715db9bf32b&camp=1789&creative=9325'
+ }
+
+const StockingStuffersLoadout = {
+
+guid: '40118D61-18E1-48F9-9A81-EE3E91396554',
+category:'testcategory',
+description: 'Fill the stockings this Christmas with these fresh items',
+detailedDescription: 'Christmas Day is approaching soon and you haven\'t need help choosing out some awesome stocking stuffer items. We got you!',
+displayName:'Stocking Stuffers',
+imageUri: 'https://heavyeditorial.files.wordpress.com/2016/10/untitled-design96.jpg?quality=65&strip=all&strip=all',
+items: [Stockings,ScalpMassager, SteelFlask,IphoneXCase]
+}
