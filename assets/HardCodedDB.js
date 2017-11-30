@@ -2,7 +2,7 @@
 
 export function getTrendingList()
 {
-    var list = [WrestlingPractice, NewYearPartyLoadout, CampingLoadout, SkiingLoadOut, SoccerLoadout];
+    var list = [WrestlingPractice, NewYearPartyLoadout, WinterLoadout, CampingLoadout, SkiingLoadOut, SoccerLoadout];
 
     return list;
 }
@@ -261,7 +261,7 @@ const WrestlingPractice = {
     guid: '694840D5-88F4-4250-94FF-A820377CF9FB',
 	author: 'Michael Soler',
     category: 'testCategory',
-    description: 'Be ready for battle in the practice room with all the essential wrestling gear',
+    description: 'Be ready for battle in the practice room with all the essential wrestling gear.',
     displayName: 'Wrestling Practice',
     imageUri: 'https://upload.wikimedia.org/wikipedia/en/6/6e/USA_Wrestling_logo.jpg',
     items: [WorkoutShirt, WorkoutShorts, WrestlingShoes, HeadGear, WrestlingSocks, WaterBottle, WrestlingBag]
@@ -402,6 +402,100 @@ const NewYearPartyLoadout = {
     description: 'Get the motivation to throw your New Year\'s Eve party and theme it the right way.',
     detailedDescription: 'It doesn\'t take much to throw an awesome  themed New Year\'s Eve party. All you have to do is pickup the phone give a couple pals a call, pour a couple drinks of whatever suits your fancy, and spend maybe 15 minutes decorating or a little longer if you pass out from blowing up balloons.',
     displayName:'New Year\'s Eve Party',
-    imageUri: 'http://cliparting.com/wp-content/uploads/2016/07/Free-party-clipart-free-clipart-graphics-images-and-photos-image-4.jpeg',
+    imageUri: 'https://openclipart.org/image/2400px/svg_to_png/181652/party.png',
     items: [NewYearsLights,NewYearsBanner, NewYearsBaloons, NewYearsPartyHats]
+}
+
+
+//Mens Winter Loadout
+const BlackJeans =
+{
+   guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
+   displayName: 'Levis 511 jeans',
+   description: '',
+   imageUri: 'https://m.media-amazon.com/images/I/81cWfF7DNjL._SX480_.jpg',
+   adUri: 'https://www.amazon.com/Levis-Mens-Made-Slim-Black/dp/B071JRNGMM/ref=sr_1_22?s=apparel&amp;ie=UTF8&amp;qid=1511931899&amp;sr=1-22&amp;nodeID=7141123011&amp;psd=1&amp;keywords=black+levi+511&_encoding=UTF8&tag=ericjsoler-20&linkCode=ur2&linkId=3cd7b7ac79617184e8fe811a461d37a0&camp=1789&creative=9325'
+  
+}
+
+const JeanJacket =
+{
+   guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
+   displayName: 'Levis Trucker Jacket',
+   description: 'Stay warm and look good with this awesome jacket.',
+   imageUri: 'https://m.media-amazon.com/images/I/81cWfF7DNjL._SX480_.jpg',
+   adUri: 'https://www.amazon.com/Levis-Mens-Made-Slim-Black/dp/B071JRNGMM/ref=sr_1_22?s=apparel&amp;ie=UTF8&amp;qid=1511931899&amp;sr=1-22&amp;nodeID=7141123011&amp;psd=1&amp;keywords=black+levi+511&_encoding=UTF8&tag=ericjsoler-20&linkCode=ur2&linkId=3cd7b7ac79617184e8fe811a461d37a0&camp=1789&creative=9325'
+  
+}
+const MocToeboot =
+{
+   guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
+   displayName: 'Moc Toe boots',
+   description: '',
+   imageUri: 'https://images-na.ssl-images-amazon.com/images/I/81WFYcSV3xL._UX535_.jpg',
+   adUri: 'https://www.amazon.com/Red-Wing-Heritage-Moc-Lug/dp/B002YHA63I/ref=sr_1_36?s=apparel&amp;ie=UTF8&amp;qid=1511934937&amp;sr=1-36&amp;nodeID=7147441011&amp;psd=1&amp;keywords=The%2BMoc-Toe%2BBoot&amp;th=1&_encoding=UTF8&tag=ericjsoler-20&linkCode=ur2&linkId=c2412572b6ccaa7dd6ce07daec0d36ed&camp=1789&creative=9325'
+  
+}
+
+const Woolsocks =
+{
+   guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
+   displayName: 'Wool Socks',
+   description: '',
+   imageUri: 'https://images-na.ssl-images-amazon.com/images/I/91fH0ju9riL._UY550_.jpg',
+   adUri: 'https://www.amazon.com/Carhartt-Mens-Extremes-Weather-Socks/dp/B003CMWX0S/ref=sr_1_6?s=apparel&amp;ie=UTF8&amp;qid=1511935525&amp;sr=1-6&amp;nodeID=7147441011&amp;psd=1&amp;keywords=men+boot+socks&amp;refinements=p_72%3A2661618011&_encoding=UTF8&tag=ericjsoler-20&linkCode=ur2&linkId=b9d49aa583139e8593a6253b4880432c&camp=1789&creative=9325'
+  
+}
+
+const Scarf =
+{
+   guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
+   displayName: 'Scarf',
+   description: '',
+   imageUri: 'https://images-na.ssl-images-amazon.com/images/I/81la9UF2tQL._UY550_.jpg',
+   adUri: 'https://www.amazon.com/gp/product/B00OL6M18S/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B00OL6M18S&amp;linkCode=as2&amp;tag=primer05-20&amp;linkId=I5WVFMO66RA6P6MB&_encoding=UTF8&tag=ericjsoler-20&linkCode=ur2&linkId=2375e76b4fc8bab44d3e0566ac501e4d&camp=1789&creative=9325'
+  
+}
+
+
+const WinterWatch =
+{
+   guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
+   displayName: 'Watch',
+   description: '',
+   imageUri: 'https://images-na.ssl-images-amazon.com/images/I/81tb5TIaUEL._UY500_.jpg',
+   adUri: 'https://www.amazon.com/gp/product/B00LVUO482/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B00LVUO482&amp;linkCode=as2&amp;tag=primer05-20&amp;linkId=R6BHJCVUWG35JR7X&_encoding=UTF8&tag=ericjsoler-20&linkCode=ur2&linkId=9d197fee08de5b07992ecb47482ebbf1&camp=1789&creative=9325'
+  
+}
+
+const WoolBlendSweater =
+{
+   guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
+   displayName: 'Sweater',
+   description: '',
+   imageUri: 'http://www.hm.com/us/product/79491?article=79491-A',
+   adUri: 'http://lp.hm.com/hmprod?set=key[source],value[/model/2017/F00%200538976%20001%2066%201958.jpg]&set=key[rotate],value[]&set=key[width],value[]&set=key[height],value[]&set=key[x],value[]&set=key[y],value[]&set=key[type],value[STILL_LIFE_FRONT]&set=key[hmver],value[1]&call=url[file:/product/large]'
+  
+}
+const brownBelt =
+{
+   guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
+   displayName: 'Belt ',
+   description: '',
+   imageUri: 'https://images-na.ssl-images-amazon.com/images/I/81j4MZetZ3L._UX425_.jpg',
+   adUri: 'https://www.amazon.com/Marinos-Genuine-Leather-Single-Buckle/dp/B0716KX9JX/ref=sr_1_1?s=apparel&amp;ie=UTF8&amp;qid=1511937025&amp;sr=1-1&amp;nodeID=7141123011&amp;psd=1&amp;keywords=brown+belt+for+men&_encoding=UTF8&tag=ericjsoler-20&linkCode=ur2&linkId=00d9f61284a507cdc6313880b7ffed0b&camp=1789&creative=9325'
+  
+}
+
+
+
+const WinterLoadout = {
+   guid: '694840D5-88F4-4250-94FF-A820377CF9FB',
+    author: 'Michael Soler',
+   category: 'testCategory',
+   description: 'Look good while battling the cold with these winter essentials. ',
+   displayName: 'Men\'s winter essentials',
+   imageUri: 'https://openclipart.org/image/2400px/svg_to_png/189278/snow-flake-5.png',
+   items: [JeanJacket, BlackJeans, WoolBlendSweater, MocToeboot, Woolsocks, WinterWatch, Scarf, brownBelt]
+
 }
