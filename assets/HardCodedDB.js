@@ -613,6 +613,15 @@ const AltimeterWatch =
     adUri: 'https://www.amazon.com/Waterproof-Watchband-eSmart-Altimeter-Pedometer/dp/B076JCD2TP/ref=sr_1_5?s=wireless&amp;ie=UTF8&amp;qid=1512097750&amp;sr=1-5&amp;keywords=altimeter&_encoding=UTF8&tag=ericjsoler-20&linkCode=ur2&linkId=5688941b449fb3ba7756e87472c1774d&camp=1789&creative=9325' 
 }
 
+const BestHikesWithDogs =
+{
+    guid: '40118D61-18E1-48F9-9A81-EE3E91396554',
+    displayName: 'Hikes for Dogs Checklist',
+    description: 'Buy the paperback copy of one of these books because you can easily grab a pen and checkoff the hikes you\'ve done! Why not explore what your area has to offer by getting a list of all the hikes in your local area',
+    imageUri: 'https://images-na.ssl-images-amazon.com/images/I/514Ny0oQdzL._SX320_BO1,204,203,200_.jpg',
+    adUri: 'https://www.amazon.com/dp/1594852677/ref=rdr_ext_tmb?&_encoding=UTF8&tag=ericjsoler-20&linkCode=ur2&linkId=7f9e317411537c32c6654ced01100531&camp=1789&creative=9325' 
+}
+
 const DayHikerStockingStuffer = {
     guid: '40118D61-18E1-48F9-9A81-EE3E91396554',
     category:'testcategory',
@@ -620,5 +629,7 @@ const DayHikerStockingStuffer = {
     detailedDescription: 'We are going to assume that the hiker in your life already has the basics. They probably already have a pair of athletic shoes or a pair of boots they wear, but I bet they don\'t have these gadgets and if they have something similar they would still be excited about getting an upgrade.',
     displayName:'Day Hiker\'s Stocking Stuffer',
     imageUri: 'https://openclipart.org/image/2400px/svg_to_png/221844/1435942396.png',
-    items: [HeadLamp, AltimeterWatch, PortableHammock,  DaypackOsprey, ShoeBag, BluetoothSpeaker, LifeStraw]
+    items: [BestHikesWithDogs, HeadLamp, AltimeterWatch, PortableHammock,  DaypackOsprey, ShoeBag, BluetoothSpeaker, LifeStraw]
 }
+
+
