@@ -2,7 +2,7 @@
 
 export function getTrendingList()
 {
-    var list = [WrestlingPractice, NewYearPartyLoadout, WinterLoadout, CampingLoadout, SkiingLoadOut, SoccerLoadout];
+    var list = [WrestlingPractice, DayHikerStockingStuffer, NewYearPartyLoadout, WinterLoadout, SkiingLoadOut, CampingLoadout, SoccerLoadout];
 
     return list;
 }
@@ -223,8 +223,8 @@ const WrestlingShoes =
     guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
     displayName: 'Wrestling Shoes',
     description: '\tQuality wrestling shoes are important for performance. I suggest adidas Performance Men\'s Adizero Wrestling XIV Wrestling Shoes or Nike Men\'s Inflict 3 Wrestling Shoes',
-    imageUri: 'http://weplaysports.com/media/images/ADM29839-Large.jpg',
-    adUri: 'https://www.amazon.com/adidas-Adizero-Wrestling-Shoes-Black/dp/B00JR4V7OI/ref=sr_1_cc_1?s=aps&amp;ie=UTF8&amp;qid=1511132232&amp;sr=1-1-catcorr&amp;keywords=Nike+inflict+wrestling+shoes&_encoding=UTF8&tag=ericjsoler-20&linkCode=ur2&linkId=8e2a25f1cb47ecd2304efb561d135ee4&camp=1789&creative=9325'
+    imageUri: 'https://images-na.ssl-images-amazon.com/images/I/71gA6iKvSWL._SL1200_.jpg',
+    adUri: 'https://www.amazon.com/adidas-AQ3325-HVC2-Speed-Shoe/dp/B01BPL8K9U/ref=cts_sh_2_vtp?pf_rd_m=ATVPDKIKX0DER&amp;pf_rd_p=2897711222&amp;pf_rd_r=0be5d71c-d64c-11e7-9111-f57860bf806c&amp;pd_rd_wg=hS1qQ&amp;pf_rd_s=desktop-detail-softlines&amp;pf_rd_t=40701&amp;pd_rd_i=B01BPL8K9U&amp;pd_rd_w=eUqj8&amp;pf_rd_i=desktop-detail-softlines&amp;pd_rd_r=0be5d71c-d64c-11e7-9111-f57860bf806c&amp;_encoding=UTF8&_encoding=UTF8&tag=ericjsoler-20&linkCode=ur2&linkId=6599f2235cfb9b98f2222172f680ac83&camp=1789&creative=9325'
 }
 
 
@@ -473,8 +473,8 @@ const WoolBlendSweater =
    guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
    displayName: 'Sweater',
    description: '',
-   imageUri: 'http://www.hm.com/us/product/79491?article=79491-A',
-   adUri: 'http://lp.hm.com/hmprod?set=key[source],value[/model/2017/F00%200538976%20001%2066%201958.jpg]&set=key[rotate],value[]&set=key[width],value[]&set=key[height],value[]&set=key[x],value[]&set=key[y],value[]&set=key[type],value[STILL_LIFE_FRONT]&set=key[hmver],value[1]&call=url[file:/product/large]'
+   imageUri: 'https://images-na.ssl-images-amazon.com/images/I/51XGoFcp9%2BL._SL500_.jpg',
+   adUri: 'https://www.amazon.com/Just-No-Logo-Sweater-Pullover/dp/B01M10OFSR/ref=sr_1_8?s=apparel&amp;ie=UTF8&amp;qid=1512100969&amp;sr=1-8&amp;nodeID=7141123011&amp;psd=1&amp;keywords=wool+blend+sweater+men&_encoding=UTF8&tag=ericjsoler-20&linkCode=ur2&linkId=85771b6626053fcf8e1d405b3540f7ad&camp=1789&creative=9325'
   
 }
 const brownBelt =
@@ -547,4 +547,78 @@ detailedDescription: 'Christmas Day is approaching soon and you haven\'t need he
 displayName:'Stocking Stuffers',
 imageUri: 'https://heavyeditorial.files.wordpress.com/2016/10/untitled-design96.jpg?quality=65&strip=all&strip=all',
 items: [Stockings,ScalpMassager, SteelFlask,IphoneXCase]
+}
+
+
+const HeadLamp =
+{
+    guid: '40118D61-18E1-48F9-9A81-EE3E91396554',
+    displayName: 'Headlamp',
+    description: 'Yes, these are a little dorky but I\'ll tell you what they come in handy. A lot of hikers miss out on hikes because they are worried about running out of daylight. Well with this headlight you will always have the light you need to finish your hike. One of my favorite things to do is do a hike towards the end of the day then watch the sunset from the top and hike down in the dark.',
+    imageUri:'https://images-na.ssl-images-amazon.com/images/I/71a7LnW6LlL._SL1500_.jpg',
+    adUri: 'https://www.amazon.com/V800-Flashlight-Waterproof-Adjustable-Headlight/dp/B00SJNM6R0/ref=sr_1_3_acs_sk_twc_2?ie=UTF8&amp;qid=1512095468&amp;sr=8-3-acs&amp;keywords=head+lamp&amp;tag=ospsearch-20&_encoding=UTF8&tag=ericjsoler-20&linkCode=ur2&linkId=a380a237f59c5920b129bd9f056394b4&camp=1789&creative=9325'
+}
+
+const LifeStraw =
+{
+    guid: '40118D61-18E1-48F9-9A81-EE3E91396554',
+    displayName: 'Life Straw',
+    description: 'This is a little extra but a cool little stocking stuffer that may or may not be used. This is something I think you get for the novelty, although some people swear by them.',
+    imageUri: 'https://images-na.ssl-images-amazon.com/images/I/91BoQqghetL._SL1500_.jpg',
+    adUri: 'https://www.amazon.com/LifeStraw-Personal-Camping-Emergency-Preparedness/dp/B006QF3TW4/ref=pd_sim_468_12?_encoding=UTF8&amp;psc=1&amp;refRID=FP9P6KXH5BSTP6ETAKXF&_encoding=UTF8&tag=ericjsoler-20&linkCode=ur2&linkId=95c96dbb1384e086774b0bfd6ae71812&camp=1789&creative=9325' 
+}
+
+const PortableHammock =
+{
+    guid: '40118D61-18E1-48F9-9A81-EE3E91396554',
+    displayName: 'Portable Hammock',
+    description: 'Hikes aren’t all about the workout of getting up the mountain, bring this hammock, a speaker, and maybe a sandwich and setup and enjoy the mountain breeze.',
+    imageUri: 'https://images-na.ssl-images-amazon.com/images/I/719EPaGXuwL._SL1000_.jpg',
+    adUri: 'https://www.amazon.com/Newdora-Ultralight-Multifunctional-Lightweight-Backpacking/dp/B01J7BPZLQ/ref=sr_1_7?s=sporting-goods&amp;ie=UTF8&amp;qid=1512095860&amp;sr=1-7&amp;keywords=hammock+camping&_encoding=UTF8&tag=ericjsoler-20&linkCode=ur2&linkId=160a3eaef1cd2b1c387523a80e987131&camp=1789&creative=9325' 
+}
+
+const BluetoothSpeaker =
+{
+    guid: '40118D61-18E1-48F9-9A81-EE3E91396554',
+    displayName: 'Waterproof Bluetooth Speaker',
+    description: 'Some people like to enjoy the sounds of nature other people like to blast hardcore rap on their way up the mountain, to each his own. Either way if you have a day hiker chances are they’d appreciate a rugged bluetooth speaker to take with them on their adventures.',
+    imageUri:'https://images-na.ssl-images-amazon.com/images/I/91hOv%2ByScyL._SL1500_.jpg',
+    adUri: 'https://www.amazon.com/Waterproof-Bluetooth-Speaker-Portable-Wireless/dp/B00ZPI9XDC/ref=sr_1_2?s=electronics&amp;ie=UTF8&amp;qid=1512099762&amp;sr=1-2&amp;keywords=submersible+speaker&_encoding=UTF8&tag=ericjsoler-20&linkCode=ur2&linkId=edf466b0473297954353b7b774a04fcd&camp=1789&creative=9325'
+}
+
+const DaypackOsprey =
+{
+    guid: '40118D61-18E1-48F9-9A81-EE3E91396554',
+    displayName: 'Day Pack',
+    description: 'Your hiker probably already has a backpack but I bet they probably don’t have a backpack dedicated purely for hiking. Osprey is a well know brand for making great packs and having a pack specific for hiking is super convenient because you can keep all your hiking gear in it and you don\'t have to keep getting your everyday backpack dirty.',
+    imageUri:'https://images-na.ssl-images-amazon.com/images/I/71nF-i9uziL._SL1500_.jpg',
+    adUri: 'https://www.amazon.com/Osprey-Packs-Talon-Backpack-Medium/dp/B01IJKZ566/ref=sr_1_1?s=sporting-goods&amp;ie=UTF8&amp;qid=1512096380&amp;sr=1-1&amp;keywords=osprey+packs+talon+22&_encoding=UTF8&tag=ericjsoler-20&linkCode=ur2&linkId=b8276c12b8cdb7a31bb2f413dc1ded2b&camp=1789&creative=9325'
+}
+
+const ShoeBag =
+{
+    guid: '40118D61-18E1-48F9-9A81-EE3E91396554',
+    displayName: 'Shoe Bag',
+    description: 'Shoe bags may be a little overkill for your day to day shoes, but your day hiker’s shoes are probably getting covered in mud and we wouldn’t want them to ruin their brand new backpack by stuffing their dirty shoes in it. Usually I bring a change of shoes to put on after my hike so I don’t get my car dirty, but throwing my dirty shoes in the car without the bag is still going to get the car dirty which makes show bags clutch.',
+    imageUri: 'https://images-na.ssl-images-amazon.com/images/I/71F08xltBoL._SL1200_.jpg',
+    adUri: 'https://www.amazon.com/iwill-CREATE-PRO-Dust-proof-Transparent/dp/B01NAPP3SM/ref=sr_1_2?s=apparel&amp;ie=UTF8&amp;qid=1512096804&amp;sr=1-2&amp;nodeID=7141123011&amp;psd=1&amp;keywords=cloth+boot+bag&_encoding=UTF8&tag=ericjsoler-20&linkCode=ur2&linkId=8d88d4a35a4330291dc123c96da0062b&camp=1789&creative=9325'
+}
+
+const AltimeterWatch =
+{
+    guid: '40118D61-18E1-48F9-9A81-EE3E91396554',
+    displayName: 'Altimeter Device',
+    description: 'Knowing how high you\'ve hiked is fun. Usually trails tell you the elevation of the peak. So being able to check how high you’ve hiked throughout the trip is fun. Do you need it? No, but its cool and a lot of cheap watches have altimeters built in.',
+    imageUri: 'https://images-na.ssl-images-amazon.com/images/I/61jpmrGX6AL._SL1000_.jpg',
+    adUri: 'https://www.amazon.com/Waterproof-Watchband-eSmart-Altimeter-Pedometer/dp/B076JCD2TP/ref=sr_1_5?s=wireless&amp;ie=UTF8&amp;qid=1512097750&amp;sr=1-5&amp;keywords=altimeter&_encoding=UTF8&tag=ericjsoler-20&linkCode=ur2&linkId=5688941b449fb3ba7756e87472c1774d&camp=1789&creative=9325' 
+}
+
+const DayHikerStockingStuffer = {
+    guid: '40118D61-18E1-48F9-9A81-EE3E91396554',
+    category:'testcategory',
+    description: 'We skip all the boring trivial gear like footwear in this loadout and show you the cool gadgets and surprisingly necessary items that will excite your day hiker Christmas morning.',
+    detailedDescription: 'We are going to assume that the hiker in your life already has the basics. They probably already have a pair of athletic shoes or a pair of boots they wear, but I bet they don\'t have these gadgets and if they have something similar they would still be excited about getting an upgrade.',
+    displayName:'Day Hiker\'s Stocking Stuffer',
+    imageUri: 'https://openclipart.org/image/2400px/svg_to_png/221844/1435942396.png',
+    items: [HeadLamp, AltimeterWatch, PortableHammock,  DaypackOsprey, ShoeBag, BluetoothSpeaker, LifeStraw]
 }
