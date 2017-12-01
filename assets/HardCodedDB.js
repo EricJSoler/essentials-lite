@@ -405,7 +405,6 @@ const NewYearPartyLoadout = {
     imageUri: 'https://openclipart.org/image/2400px/svg_to_png/181652/party.png',
     items: [NewYearsLights,NewYearsBanner, NewYearsBaloons, NewYearsPartyHats]
 }
-<<<<<<< HEAD
 
 
 //Mens Winter Loadout
@@ -498,8 +497,7 @@ const WinterLoadout = {
    displayName: 'Men\'s winter essentials',
    imageUri: 'https://openclipart.org/image/2400px/svg_to_png/189278/snow-flake-5.png',
    items: [JeanJacket, BlackJeans, WoolBlendSweater, MocToeboot, Woolsocks, WinterWatch, Scarf, brownBelt]
-
-=======
+}
 // Stocking Stuffers LoadOut
 
  const Stockings = {
@@ -549,5 +547,4 @@ detailedDescription: 'Christmas Day is approaching soon and you haven\'t need he
 displayName:'Stocking Stuffers',
 imageUri: 'https://heavyeditorial.files.wordpress.com/2016/10/untitled-design96.jpg?quality=65&strip=all&strip=all',
 items: [Stockings,ScalpMassager, SteelFlask,IphoneXCase]
->>>>>>> c1ec6eee5f481340a4b322a6527e31d6b5e7e4b4
 }
