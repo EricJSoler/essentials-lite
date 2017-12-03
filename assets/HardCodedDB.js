@@ -572,7 +572,7 @@ const PortableHammock =
 {
     guid: '40118D61-18E1-48F9-9A81-EE3E91396554',
     displayName: 'Portable Hammock',
-    description: 'Hikes aren’t all about the workout of getting up the mountain, bring this hammock, a speaker, and maybe a sandwich and setup and enjoy the mountain breeze.',
+    description: 'Bring this hammock, a speaker, and maybe a sandwich and setup and enjoy the mountain breeze.',
     imageUri: 'https://images-na.ssl-images-amazon.com/images/I/719EPaGXuwL._SL1000_.jpg',
     adUri: 'https://www.amazon.com/Newdora-Ultralight-Multifunctional-Lightweight-Backpacking/dp/B01J7BPZLQ/ref=sr_1_7?s=sporting-goods&amp;ie=UTF8&amp;qid=1512095860&amp;sr=1-7&amp;keywords=hammock+camping&_encoding=UTF8&tag=ericjsoler-20&linkCode=ur2&linkId=160a3eaef1cd2b1c387523a80e987131&camp=1789&creative=9325' 
 }
@@ -617,7 +617,7 @@ const BestHikesWithDogs =
 {
     guid: '40118D61-18E1-48F9-9A81-EE3E91396554',
     displayName: 'Hikes for Dogs Checklist',
-    description: 'Buy the paperback copy of one of these books because you can easily grab a pen and checkoff the hikes you\'ve done! Why not explore what your area has to offer by getting a list of all the hikes in your local area',
+    description: 'Buy the paperback copy of one of these books and use the table of contents as a checklist for places you\'ve been.',
     imageUri: 'https://images-na.ssl-images-amazon.com/images/I/514Ny0oQdzL._SX320_BO1,204,203,200_.jpg',
     adUri: 'https://www.amazon.com/dp/1594852677/ref=rdr_ext_tmb?&_encoding=UTF8&tag=ericjsoler-20&linkCode=ur2&linkId=7f9e317411537c32c6654ced01100531&camp=1789&creative=9325' 
 }
