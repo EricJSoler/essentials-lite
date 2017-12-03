@@ -423,7 +423,7 @@ const JeanJacket =
    guid: 'A321D67F-32CC-44BB-B0F7-5F14DF6AD216',
    displayName: 'Levis Trucker Jacket',
    description: 'Stay warm and look good with this awesome jacket.',
-   imageUri: 'https://m.media-amazon.com/images/I/81cWfF7DNjL._SX480_.jpg',
+   imageUri: 'https://images-na.ssl-images-amazon.com/images/I/51yyEHjSUuL.jpg',
    adUri: 'https://www.amazon.com/Levis-Mens-Made-Slim-Black/dp/B071JRNGMM/ref=sr_1_22?s=apparel&amp;ie=UTF8&amp;qid=1511931899&amp;sr=1-22&amp;nodeID=7141123011&amp;psd=1&amp;keywords=black+levi+511&_encoding=UTF8&tag=ericjsoler-20&linkCode=ur2&linkId=3cd7b7ac79617184e8fe811a461d37a0&camp=1789&creative=9325'
   
 }
